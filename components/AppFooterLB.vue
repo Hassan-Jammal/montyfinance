@@ -1,6 +1,6 @@
 <template lang="">
     <footer class="py-16 bg-gradient-to-r from-[#585E8D] to-[#09052B]">
-        <div class="container md:px-16">
+        <div class="container">
             <div class="flex flex-col md:flex-row justify-between items-center md:items-end gap-4">
                 <div class="flex max-md:flex-col justify-between items-end gap-10">
                     <AppLogoWhite class="max-md:mx-auto" />
