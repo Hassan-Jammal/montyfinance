@@ -4,5 +4,6 @@
 </template>
 
 <script setup>
-    const { currentRoute } = useHeader();
+    const route = useRoute();
+    const currentRoute = computed(() => route.path);
 </script>

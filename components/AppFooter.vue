@@ -3,6 +3,12 @@
     <AppFooterLB v-else/>
 </template>
 
+<script setup>
+    const route = useRoute();
+    const currentRoute = computed(() => route.path);
+</script>
+
+
 <!-- <script setup>
     // Submission State
     const submissionMessage = ref('');

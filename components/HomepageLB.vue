@@ -290,14 +290,14 @@
 	import { useCountry } from '~/composables/useCountry';
 
 	useSeoMeta({
-        title: 'Homepage',
+        title: 'Homepage Lebanon',
         description: '',
 
-        ogTitle: 'Homepage',
+        ogTitle: 'Homepage Lebanon',
         ogDescription: '',
         ogImage: '/assets/images/share-image-team.webp',
 
-        twitterTitle: 'Homepage',
+        twitterTitle: 'Homepage Lebanon',
         twitterDescription: '',
         twitterCard: 'summary_large_image',
     })

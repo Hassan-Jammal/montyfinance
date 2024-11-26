@@ -5,9 +5,9 @@
                 <div class="flex max-md:flex-col justify-between items-end gap-10">
                     <AppLogoWhite class="max-md:mx-auto" />
                     <div class="flex max-md:flex-col justify-between items-center gap-6 text-white text-base">
-                        <NuxtLink :to="'/'">Cookies Policy</NuxtLink>
-                        <NuxtLink :to="'/'">Data Protection Policy</NuxtLink>
-                        <NuxtLink :to="'/'">Terms and Conditions</NuxtLink>
+                        <NuxtLink :to="'/cookies-policy'">Cookies Policy</NuxtLink>
+                        <NuxtLink :to="'/data-protection-policy'">Data Protection Policy</NuxtLink>
+                        <NuxtLink :to="'/terms-and-conditions'">Terms and Conditions</NuxtLink>
                     </div>
                 </div>
                 <!-- <div class="flex flex-col gap-1">

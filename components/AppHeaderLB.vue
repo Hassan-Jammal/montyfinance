@@ -3,7 +3,9 @@
         <div class="w-full py-6 border-b border-[#e9edf422] z-[3]">
             <div class="container flex justify-between items-center">
                 <div class="flex items-center gap-4">
-                    <AppLogo :color="'#09052B'"/>
+                    <NuxtLink :to="'/'">
+                        <AppLogo :color="'#09052B'"/>
+                    </NuxtLink>
                     <Icon @click="toggleLocationDropdown" name="fa6-solid:angle-down" class="text-xl text-[#09052B] cursor-pointer" />
                     <div v-if="locationVisible" :class="{ '-translate-y-full': isScrolledDown && !navVisible}" class="absolute top-[calc(100%+1.5rem)] left-0 w-full flex justify-center items-center rounded-b bg-white z-10 transition-all duration-300 ease-in-out">
                         <div @click="manualRoute('eu')" class="flex flex-col justify-center items-center w-full py-3 text-[#09052B] cursor-pointer">Europe</div>

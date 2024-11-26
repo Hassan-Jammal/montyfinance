@@ -41,7 +41,7 @@
 	<main class="mt-[88px]">
 		<section class="container">
 			<div class="flex flex-col justify-center items-center h-[calc(100vh-88px)] text-center">
-				<img class="w-full md:w-1/2 mx-auto" :src="`images/error-404.webp`" alt="Error 404" width="1100" height="676"/>
+				<img class="w-full md:w-1/2 mx-auto" :src="`/images/error-404.webp`" alt="Error 404" width="1100" height="676"/>
 				<h1 class="text-6xl font-lora mt-6">So sorry!</h1>
 				<p class="mt-6">The page you were looking for doesn't exist.<br />You may have mistyped the address or the page may have moved.</p>
 				<NuxtLink href="/" class="inline-block mt-3 md:mt-6 py-2 px-8 text-sm font-medium text-white bg-[#585E8D] hover:bg-[#09052B] transition-[background] duration-300 ease-in-out">Go to Home page</NuxtLink>

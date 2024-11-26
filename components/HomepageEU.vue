@@ -418,14 +418,14 @@
 	import { useCountry } from '~/composables/useCountry';
 
 	useSeoMeta({
-        title: 'Homepage',
+        title: 'Homepage Europe Europe',
         description: '',
 
-        ogTitle: 'Homepage',
+        ogTitle: 'Homepage Europe',
         ogDescription: '',
         ogImage: '/assets/images/share-image-team.webp',
 
-        twitterTitle: 'Homepage',
+        twitterTitle: 'Homepage Europe',
         twitterDescription: '',
         twitterCard: 'summary_large_image',
     })
