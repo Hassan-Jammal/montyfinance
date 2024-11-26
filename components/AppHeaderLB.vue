@@ -48,8 +48,8 @@
     const navLinks = [
         { text: 'About us', route: '/about-us', target: 'about-us' },
         { text: 'Portfolio', route: '/portfolio', target: 'portfolio' },
-        { text: 'Board Members', route: '/board-members', target: 'board' },
-        { text: 'Contact Us', route: '/contact-us', target: 'contact-us' },
+        { text: 'Board members', route: '/board-members', target: 'board' },
+        { text: 'Contact us', route: '/contact-us', target: 'contact-us' },
     ];
 </script>
 

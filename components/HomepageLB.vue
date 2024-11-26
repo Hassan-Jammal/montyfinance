@@ -4,7 +4,7 @@
             <div class="flex flex-col justify-center gap-4 w-full md:w-1/2 xl:w-1/3 h-full">
                 <h1 class="text-[#09052B] text-2xl lg:text-[3rem] font-lora !leading-[1.3] text-[#09052B] font-bold" data-aos="fade-up" data-aos-delay="100"><span class="block text-[#73788B] font-medium">Empowering Every Lebanese</span>with Inclusive Access to Essential Financial Services</h1>
                 <div>
-                    <ScrollButton target="contact-us" class="mt-3 md:mt-6 py-2 px-8 text-sm font-medium text-white bg-[#09052B] rounded-full transition-[background] duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="300">Contact Us</ScrollButton>
+                    <ScrollButton target="contact-us" class="mt-3 md:mt-6 py-2 px-8 text-sm font-medium text-white bg-[#09052B] rounded-full transition-[background] duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="300">Contact us</ScrollButton>
                 </div>
             </div>
         </div>
@@ -96,7 +96,7 @@
                     <h2>Affiliated With</h2>
                 </div>
                 <h3 class="mt-6 text-2xl lg:text-5xl font-lora" data-aos="fade-up">Explore new ways to master your money</h3>
-                <button class="mt-3 md:mt-6 py-2 px-8 text-sm font-medium text-white bg-[#09052B] rounded-full transition-[background] duration-300 ease-in-out" data-aos="fade-up">Learn More</button>
+                <button class="mt-3 md:mt-6 py-2 px-8 text-sm font-medium text-white bg-[#09052B] rounded-full transition-[background] duration-300 ease-in-out" data-aos="fade-up">Learn more</button>
             </div>
             <img class="mt-8" src="/images/affiliated-with.png" alt="Affiliated With" width="2496" height="1077"/>
         </div>
@@ -329,7 +329,7 @@
     const allItems = ref([
         {
             id: 1,
-            image: '/images/mountasser-hachem.webp',
+            image: '/images/mountasser-hachem1.png',
             name: 'Mountasser Hachem',
             role: 'Chairman',
             linkedin: '#',
@@ -337,7 +337,7 @@
         },
         {
             id: 2,
-            image: '/images/gaby-andari.png',
+            image: '/images/george-kanaan.png',
             name: 'George Kanaan',
             role: 'Board Member',
             linkedin: '#',
@@ -345,7 +345,7 @@
         },
         {
             id: 3,
-            image: '/images/mountasser-hachem.png',
+            image: '/images/walter-siouffi.png',
             name: 'Walter Siouffi',
             role: 'Board Member',
             linkedin: '#',
@@ -353,7 +353,7 @@
         },
         {
             id: 4,
-            image: '/images/gaby-andari.png',
+            image: '/images/gaby-andari1.png',
             name: 'Gaby Andari',
             role: 'Board Member',
             linkedin: '#',
