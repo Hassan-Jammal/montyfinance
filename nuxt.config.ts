@@ -45,21 +45,21 @@ export default defineNuxtConfig({
     },
     //pageTransition: { name: 'page', mode: 'out-in' }
   },
-  pages: true,
-  hooks: {
-    'pages:extend'(pages) {
-      pages.push({
-        name: 'lebanon',
-        path: '/lb',
-        file: '~/pages/index.vue', // Reuse the index.vue file for Lebanon
-      });
-      pages.push({
-        name: 'europe',
-        path: '/eu',
-        file: '~/pages/index.vue', // Reuse the index.vue file for Europe
-      });
-    },
-  },
+  // pages: true,
+  // hooks: {
+  //   'pages:extend'(pages) {
+  //     pages.push({
+  //       name: 'lebanon',
+  //       path: '/lb',
+  //       file: '~/pages/index.vue', // Reuse the index.vue file for Lebanon
+  //     });
+  //     pages.push({
+  //       name: 'europe',
+  //       path: '/eu',
+  //       file: '~/pages/index.vue', // Reuse the index.vue file for Europe
+  //     });
+  //   },
+  // },
   modules: [
     "@nuxtjs/tailwindcss",
     "@nuxt/image",

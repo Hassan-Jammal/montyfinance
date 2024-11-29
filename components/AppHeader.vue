@@ -6,11 +6,11 @@
 
 <script setup>
     const manualSelection = ref(false);
-    const {  detectCountry } = useCountry(manualSelection);
+    const {  detectCountry } = useCountry();
 
     detectCountry();
 
-    const { currentRoute } = useHeader(manualSelection);
+    const { currentRoute } = useHeader();
 </script>
 
 <style lang="sass" scoped>

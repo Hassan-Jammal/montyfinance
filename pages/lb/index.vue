@@ -1,3 +1,3 @@
 <template>
-    <Preloader />
+  <HomepageLB />
 </template>

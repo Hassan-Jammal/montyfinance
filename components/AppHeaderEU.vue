@@ -6,7 +6,7 @@
                     <AppLogo :color="'#FFFFFF'"/>
                     <Icon @click="toggleLocationDropdown" name="fa6-solid:angle-down" class="text-xl text-white cursor-pointer" />
                     <div v-if="locationVisible" :class="{ '-translate-y-full': isScrolledDown && !navVisible}" class="absolute top-[calc(100%+1.5rem)] left-0 w-full flex justify-center items-center rounded-b bg-[#15192D] z-10 transition-all duration-300 ease-in-out">
-                        <div @click="manualRoute('lb')" class="flex flex-col justify-center items-center w-full py-3 text-white cursor-pointer">Lebanon</div>
+                        <NuxtLink :to="'/lb'" class="flex flex-col justify-center items-center w-full py-3 text-white cursor-pointer">Lebanon</NuxtLink>
                     </div>    
                 </div>    
                 <div class="flex items-center gap-4 lg:gap-7">
@@ -42,7 +42,7 @@
 
 <script setup>
     const manualSelection = ref(false);
-    const { manualRoute, detectCountry } = useCountry(manualSelection);
+    const { detectCountry } = useCountry();
     const {navVisible, isScrolledDown, isOnTop, toggleLocationDropdown, toggleNav, locationVisible} = useHeader();
     
     const navLinks = [

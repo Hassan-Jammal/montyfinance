@@ -1,3 +1,4 @@
 <template>
-    <Preloader />
+    <HomepageEU />
 </template>
+  
