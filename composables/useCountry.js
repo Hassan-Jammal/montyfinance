@@ -23,6 +23,14 @@ export const useCountry = () => {
                         countryIsEU.value = detectedCountry.is_eu;
                         selectedCountry.value = detectedCountry;
                         initialCode.value = detectedCountry.code;
+
+                        const region = countryIsEU.value ? 'eu' : 'lb';
+
+                        // Push the detected country to the URL based on EU membership
+                        if (currentPath.value == "/"){
+                            // Dynamic routing to /lebanon or /europe
+                            router.push(`${region}`); 
+                        }
                     }
                     
                     // On refresh or manually writing the url, take stay on the same path of /lb or /eu
@@ -30,15 +38,6 @@ export const useCountry = () => {
 
                     // // Only call detectCountry if no manual selection has been made
                     // if (manualSelection.value) return;
-
-                    // Push the detected country to the URL based on EU membership
-                    const region = countryIsEU.value ? 'eu' : 'lb';
-
-                    if (currentPath.value == "/"){
-                        // Dynamic routing to /lebanon or /europe
-                        await router.push(`${region}`); 
-                    }
-                    
                 } else {
                     // console.warn('Detected country not found in countries data');
                 }
