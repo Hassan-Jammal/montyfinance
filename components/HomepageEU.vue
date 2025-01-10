@@ -6,7 +6,7 @@
 					<h1 class="text-white text-2xl lg:text-[3rem] font-lora !leading-[1.3]" data-aos="fade-up" data-aos-delay="100">Making financial independence accessible and affordable for all</h1>
 					<ScrollButton target="contact-us" class="flex items-center gap-2 w-max mt-3 md:mt-6 text-sm text-[#D3EAF0] cursor-pointer" data-aos="fade-up" data-aos-delay="200">
 						Find out how we work
-						<Icon name="material-symbols-light:arrow-outward" class="text-2xl" />
+                        <img src="/images/arrow-up-right.svg" alt="Arrow Up Right" width="25" height="25" />
 					</ScrollButton>
 					<div>
 						<ScrollButton target="contact-us" class="mt-3 md:mt-6 py-2 px-8 text-sm font-medium text-white bg-[#585E8D] hover:bg-[#09052B] transition-[background] duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="300">Contact Us</ScrollButton>
@@ -173,7 +173,6 @@
 												<div id="selected-country" class="flex justify-start items-center gap-2">
 													<img class="selected-country--image" :src="`/images/flags/${selectedCountry.iso2 || 'LB' }.svg`" :alt="selectedCountry.name || 'Lebanon'" width="20" height="20">
 													<span class="selected-country--name">+{{ selectedCountry.code || '961' }}</span>
-													<!-- <Icon name="fa6-solid:angle-down" class="selected-country--icon" :class="{'rotate-180': showDropdown}" /> -->
 												</div>
 											</div>
 											<input v-model="form.code" type="hidden" id="code">
@@ -219,7 +218,7 @@
 									<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#585E8D"/>
 									</svg>
-									<Icon name="ph:map-pin-bold" class="mt-3 text-[#585E8D] text-3xl" />
+									<img class="mt-3" src="/images/marker-pin.svg" alt="Maker Pin" width="30" height="30" />
 									<div>
 										<h2 class="mt-2 text-3xl text-[#585E8D] font-lora">Office Address</h2>
 										<p class="block mt-2 text-[#73788B]">Gefinor Center, Hamra, Beirut, Lebanon</p>
@@ -231,7 +230,7 @@
 									<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#585E8D"/>
 									</svg>
-									<Icon name="ph:envelope-open-bold" class="mt-3 text-[#585E8D] text-3xl" />
+									<img class="mt-3" src="/images/mail.svg" alt="Mail" width="30" height="30" />
 									<div>
 										<h2 class="mt-2 text-3xl text-[#585E8D] font-lora">General Inquiries</h2>
 										<a href="mailto:montyfinance@gmail.com" class="block mt-2 text-[#73788B]">montyfinance@gmail.com</a>
@@ -243,7 +242,7 @@
 									<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#585E8D"/>
 									</svg>
-									<Icon name="ph:phone-bold" class="mt-3 text-[#585E8D] text-3xl" />
+									<img class="mt-3" src="/images/phone.svg" alt="Phone" width="30" height="30" />
 									<div>
 										<h2 class="mt-2 text-3xl text-[#585E8D] font-lora">Toll-Free Number</h2>
 										<a href="tel:+448082387522" class="block mt-2 text-[#73788B]">+44 808 238 7522</a>
@@ -287,11 +286,11 @@
 							
 							<div class="flex justify-between items-center gap-2 mt-4">
 								<a class="flex" :href="board.linkedin" target="_blank" aria-label="Linkedin" rel="noopener">
-									<Icon name="uiw:linkedin" class="text-2xl text-[#585E8D]" />
+									<img src="/images/linkedin-purple.svg" alt="Linkedin" width="25" height="25" />
 								</a>
 								<p @click="toggleExpand(board)" class="flex justify-between items-center gap-2 text-sm text-[#585E8D] hover:text-[#09052B] cursor-pointer" data-aos="fade-up" data-aos-delay="200">
 									<span>{{ board.isExpanded ? 'Show less' : 'Read more' }}</span>
-									<Icon name="material-symbols-light:arrow-outward" class="text-2xl" />
+									<img src="/images/arrow-up-right.svg" alt="Arrow Up Right" width="25" height="25" />
 								</p>
 								<div></div>
 							</div>
@@ -387,7 +386,7 @@
 						<p class="mt-6">MyMonty, a global neobanking platform, offers a seamless digital banking experience anytime, anywhere.</p>
 						<a href="https://mymonty.com" target="_blank" class="flex items-center gap-2 w-max mt-6 text-sm" data-aos="fade-up" data-aos-delay="200">
 							Discover
-							<Icon name="material-symbols-light:arrow-outward" class="text-2xl" />
+							<img src="/images/arrow-up-right.svg" alt="Arrow Up Right" width="25" height="25" />
 						</a>
 					</div>
 
@@ -396,7 +395,7 @@
 						<p class="mt-6">MontyPay, an international payment gateway, provides intelligent and powerful payment solutions to help your business grow and thrive globally.						</p>
 						<a href="https://montypay.com" target="_blank" class="flex items-center gap-2 w-max mt-6 text-sm" data-aos="fade-up" data-aos-delay="200">
 							Discover
-							<Icon name="material-symbols-light:arrow-outward" class="text-2xl" />
+							<img src="/images/arrow-up-right.svg" alt="Arrow Up Right" width="25" height="25" />
 						</a>
 					</div>
 
@@ -405,7 +404,7 @@
 						<p class="mt-6">Empower your bank, FinTech startup, or financial institution with the right technical infrastructure to accelerate digital transformation, delivering a smooth and consistent experience.</p>
 						<!-- <a href="https://mymonty.com" target="_blank" class="flex items-center gap-2 w-max mt-6 text-sm text-[#73788B]" data-aos="fade-up" data-aos-delay="200">
 							Discover
-							<Icon name="material-symbols-light:arrow-outward" class="text-2xl" />
+							<img src="/images/arrow-up-right.svg" alt="Arrow Up Right" width="25" height="25" />
 						</a> -->
 					</div>
 				</div>

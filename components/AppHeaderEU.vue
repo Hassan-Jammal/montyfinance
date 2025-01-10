@@ -4,7 +4,11 @@
             <div class="container flex justify-between items-center">
                 <div class="flex items-center gap-4">
                     <AppLogo :color="'#FFFFFF'"/>
-                    <Icon @click="toggleLocationDropdown" name="fa6-solid:angle-down" class="text-xl text-white cursor-pointer" />
+
+                    <svg @click="toggleLocationDropdown" class="cursor-pointer" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9.33154L12 15.3315L18 9.33154" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
                     <div v-if="locationVisible" :class="{ '-translate-y-full': isScrolledDown && !navVisible}" class="absolute top-[calc(100%+1.5rem)] left-0 w-full flex justify-center items-center rounded-b bg-[#15192D] z-10 transition-all duration-300 ease-in-out">
                         <NuxtLink :to="'/lb'" class="flex flex-col justify-center items-center w-full py-3 text-white cursor-pointer">Lebanon</NuxtLink>
                     </div>    
@@ -20,8 +24,8 @@
                         </ul>
                     </nav>
                     <div class="block lg:hidden leading-[0] text-white text-3xl cursor-pointer" @click="toggleNav">
-                        <Icon v-if="!navVisible" name="fa6-solid:bars" class="text-2xl" />
-                        <Icon v-if="navVisible" name="fa6-solid:x" class="text-2xl" />
+                        <img v-if="!navVisible" src="/images/burger.svg" alt="Bars" width="25" height="25" />
+						<img v-if="navVisible" src="/images/close.svg" alt="Close" width="25" height="25" />
                     </div>
                 </div>
             </div>

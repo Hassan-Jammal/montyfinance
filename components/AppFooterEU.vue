@@ -16,7 +16,7 @@
                 </div> -->
 
                 <div class="flex items-center gap-2 text-[#73788B]">
-                    <Icon name="material-symbols:mail-outline-rounded" class="text-2xl" />
+                    <img src="/images/mail-1.svg" alt="Mail" width="20" height="14" />
                     <a class="text-base font-medium hover:text-[#09052B] transition-all duration-300 ease-in-out" href="mailto:supportlb@montyfinance.com">supportlb@montyfinance.com</a>
                 </div>
             </div>
@@ -33,7 +33,7 @@
                     </a>
                 </div>
                 <div class="flex items-center gap-2 text-[#73788B]">
-                    <Icon name="material-symbols:mail-outline-rounded" class="text-2xl" />
+                    <img class="mt-3" src="/images/mail-1.svg" alt="Mail" width="20" height="14" />
                     <a class="text-base font-medium hover:text-[#09052B] transition-all duration-300 ease-in-out" href="mailto:supportlb@montyfinance.com">supportlb@montyfinance.com</a>
                 </div>
             </div> -->

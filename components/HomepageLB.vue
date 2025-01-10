@@ -118,7 +118,7 @@
                     <div class="w-full relative">
                         <img class="max-md:w-full rounded-lg w-full" :src="selectedItem.image" :alt="selectedItem.name" />
                         <a href="" class="flex absolute bottom-4 right-4" target="_blank" aria-label="Linkedin" rel="noopener">
-                        <Icon name="uiw:linkedin" class="text-3xl text-white" />
+                            <img src="/images/linkedin.svg" alt="Linkedin" width="30" height="30" />
                         </a>
                     </div>
                     <div class="md:col-span-2 flex flex-col">
@@ -134,7 +134,7 @@
                         <div class="relative">
                             <img class="w-full h-full object-cover rounded-lg" :src="item.image" :alt="item.name" />
                             <a href="" class="flex absolute bottom-4 right-4" target="_blank" aria-label="Linkedin" rel="noopener">
-                                <Icon name="uiw:linkedin" class="text-xl text-white" />
+                                <img src="/images/linkedin.svg" alt="Linkedin" width="25" height="25" />
                             </a>
                         </div>
                         <div class="flex flex-col justify-between py-6">
@@ -144,7 +144,7 @@
                             </div>
                             <ScrollButton target="board" class="readMore flex items-center gap-2 text-base text-[#DFDFE0] cursor-pointer" @click="swapItems(index)">
                                 <p>Read More</p>
-                                <Icon name="material-symbols-light:arrow-outward" class="text-2xl" />
+                                <img src="/images/arrow-up-right.svg" alt="Arrow Up Right" width="25" height="25" />
                             </ScrollButton>
                         </div>
                     </div>
@@ -197,7 +197,6 @@
                                             <div id="selected-country" class="flex justify-start items-center gap-2">
                                                 <img class="selected-country--image" :src="`/images/flags/${selectedCountry.iso2 || 'LB' }.svg`" :alt="selectedCountry.name || 'Lebanon'" width="20" height="20">
                                                 <span class="selected-country--name">+{{ selectedCountry.code || '961' }}</span>
-                                                <!-- <Icon name="fa6-solid:angle-down" class="selected-country--icon" :class="{'rotate-180': showDropdown}" /> -->
                                             </div>
                                         </div>
                                         <input v-model="form.code" type="hidden" id="code">
@@ -248,7 +247,7 @@
                                 <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#585E8D"/>
                                 </svg>
-                                <Icon name="ph:map-pin-bold" class="mt-3 text-[#585E8D] text-3xl" />
+                                <img class="mt-3" src="/images/marker-pin.svg" alt="Maker Pin" width="30" height="30" />
                                 <div>
                                     <h2 class="mt-2 text-3xl text-[#585E8D] font-lora">Office Address</h2>
                                     <p class="block mt-2 text-[#73788B]">Gefinor Center, Hamra, Beirut, Lebanon</p>
@@ -260,7 +259,7 @@
                                 <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#585E8D"/>
                                 </svg>
-                                <Icon name="ph:envelope-open-bold" class="mt-3 text-[#585E8D] text-3xl" />
+                                <img class="mt-3" src="/images/mail.svg" alt="Mail" width="30" height="30" />
                                 <div>
                                     <h2 class="mt-2 text-3xl text-[#585E8D] font-lora">General Inquiries</h2>
                                     <a href="mailto:montyfinance@gmail.com" class="block mt-2 text-[#73788B]">montyfinance@gmail.com</a>
@@ -272,7 +271,7 @@
                                 <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#585E8D"/>
                                 </svg>
-                                <Icon name="ph:phone-bold" class="mt-3 text-[#585E8D] text-3xl" />
+                                <img class="mt-3" src="/images/phone.svg" alt="Phone" width="30" height="30" />
                                 <div>
                                     <h2 class="mt-2 text-3xl text-[#585E8D] font-lora">Toll-Free Number</h2>
                                     <a href="tel:+448082387522" class="block mt-2 text-[#73788B]">+44 808 238 7522</a>

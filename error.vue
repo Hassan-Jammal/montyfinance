@@ -19,8 +19,8 @@
                         </ul>
                     </nav>
                     <div class="block lg:hidden leading-[0] text-3xl cursor-pointer" @click="toggleNav">
-                        <Icon v-if="!navVisible" name="fa6-solid:bars" class="text-2xl" />
-                        <Icon v-if="navVisible" name="fa6-solid:x" class="text-2xl" />
+						<img v-if="!navVisible" src="/images/burger.svg" alt="Bars" width="25" height="25" />
+						<img v-if="navVisible" src="/images/close.svg" alt="Close" width="25" height="25" />
                     </div>
                 </div>
             </div>

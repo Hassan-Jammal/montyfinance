@@ -6,7 +6,9 @@
                     <NuxtLink :to="'/lb'">
                         <AppLogo :color="'#09052B'"/>
                     </NuxtLink>
-                    <Icon @click="toggleLocationDropdown" name="fa6-solid:angle-down" class="text-xl text-[#09052B] cursor-pointer" />
+                    <svg @click="toggleLocationDropdown" class="cursor-pointer" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9.33154L12 15.3315L18 9.33154" stroke="#09052B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                     <div v-if="locationVisible" :class="{ '-translate-y-full': isScrolledDown && !navVisible}" class="absolute top-[calc(100%+1.5rem)] left-0 w-full flex justify-center items-center rounded-b bg-white z-10 transition-all duration-300 ease-in-out">
                         <!-- <div @click="manualRoute('eu')" class="flex flex-col justify-center items-center w-full py-3 text-[#09052B] cursor-pointer">Europe</div> -->
                         <NuxtLink :to="'/eu'" class="flex flex-col justify-center items-center w-full py-3 cursor-pointer">Europe</NuxtLink>
@@ -23,8 +25,8 @@
                         </ul>
                     </nav>
                     <div class="block lg:hidden leading-[0] text-[#09052B] text-3xl cursor-pointer" @click="toggleNav">
-                        <Icon v-if="!navVisible" name="fa6-solid:bars" class="text-2xl" />
-                        <Icon v-if="navVisible" name="fa6-solid:x" class="text-2xl" />
+                        <img v-if="!navVisible" src="/images/burger.svg" alt="Bars" width="25" height="25" />
+						<img v-if="navVisible" src="/images/close.svg" alt="Close" width="25" height="25" />
                     </div>
                 </div>
             </div>
