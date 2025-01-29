@@ -5,9 +5,9 @@
                 <div class="flex max-md:flex-col justify-between items-end gap-10">
                     <AppLogoWhite class="max-md:mx-auto" />
                     <div class="flex max-md:flex-col justify-between items-center gap-6 text-white text-base">
-                        <NuxtLink :to="'/lb/cookies-policy'">Cookies Policy</NuxtLink>
-                        <NuxtLink :to="'/lb/data-protection-policy'">Data Protection Policy</NuxtLink>
-                        <NuxtLink :to="'/lb/terms-and-conditions'">Terms and Conditions</NuxtLink>
+                        <NuxtLink :to="'/lb/cookies-policy'" class="hover:text-[#DFDFE0]">Cookies Policy</NuxtLink>
+                        <NuxtLink :to="'/lb/data-protection-policy'" class="hover:text-[#DFDFE0]">Data Protection Policy</NuxtLink>
+                        <NuxtLink :to="'/lb/terms-and-conditions'" class="hover:text-[#DFDFE0]">Terms and Conditions</NuxtLink>
                     </div>
                 </div>
                 <!-- <div class="flex flex-col gap-1">
@@ -23,7 +23,7 @@
 
                 <div class="flex items-center gap-2 text-white">
                     <img src="/images/mail-1.svg" alt="Mail" width="20" height="14" />
-                    <a class="text-base font-medium hover:text-[#09052B] transition-all duration-300 ease-in-out" href="mailto:supportlb@montyfinance.com">supportlb@montyfinance.com</a>
+                    <a class="text-base font-medium hover:text-[#DFDFE0] transition-all duration-300 ease-in-out" href="mailto:supportlb@montyfinance.com">supportlb@montyfinance.com</a>
                 </div>
             </div>
 
