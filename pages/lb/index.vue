@@ -2,9 +2,9 @@
     <section id="section-1" class="flex flex-col justify-center items-center h-screen bg-[url('public/images/banner-lb.webp')] bg-no-repeat bg-cover bg-center">
         <div class="container">
             <div class="flex flex-col justify-center gap-4 w-full md:w-1/2 xl:w-1/3 h-full">
-                <h1 class="text-[#09052B] text-2xl lg:text-[3rem] font-lora !leading-[1.3] font-bold" data-aos="fade-up" data-aos-delay="100"><span class="block text-[#73788B] font-medium">Empowering Every Lebanese</span>with Inclusive Access to Essential Financial Services</h1>
+                <h1 class="text-white text-2xl lg:text-[3rem] font-lora !leading-[1.3] font-bold" data-aos="fade-up" data-aos-delay="100"><span class="block text-white font-medium">Empowering Every Lebanese</span>with Inclusive Access to Essential Financial Services</h1>
                 <div data-aos="fade-up" data-aos-delay="200">
-                    <ScrollButton target="contact-us" class="mt-3 md:mt-6 py-2 px-8 text-sm font-medium text-white bg-[#09052B] hover:bg-[#585E8D] rounded-full transition-[background] duration-300 ease-in-out" >Contact us</ScrollButton>
+                    <ScrollButton target="contact-us" class="mt-3 md:mt-6 py-2 px-8 text-sm font-medium text-black bg-[#C7D165] hover:bg-white rounded-full transition-[background] duration-300 ease-in-out" >Contact us</ScrollButton>
                 </div>
             </div>
         </div>
