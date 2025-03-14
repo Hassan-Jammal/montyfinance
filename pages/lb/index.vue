@@ -130,7 +130,7 @@
 
     <section id="section-7" class="contact-us py-16 md:py-32">
         <div class="container">
-            <div class="flex max-md:flex-col items-center gap-8">
+            <div class="flex max-md:flex-col items-center gap-24">
                 <div class="w-full lg:w-3/5">
                     <div class="flex items-center gap-1 text-sm text-[#C7D165] font-libre font-bold uppercase" data-aos="fade-up">
                         <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
