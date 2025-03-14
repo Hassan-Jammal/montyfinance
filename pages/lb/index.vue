@@ -18,20 +18,42 @@
                 </svg>
                 <h2>About Monty Finance</h2>
             </div>
-            <div class="flex gap-12">
+            <div class="flex max-lg:flex-col gap-12 lg:gap-24 xl:gap-48">
                 <div class="flex-1 flex flex-col">
                     <h3 class="mt-6 text-2xl lg:text-5xl font-lora font-bold" data-aos="fade-up">Unlocking your financial freedom with confidence</h3>
                     <div class="flex flex-col gap-2">
                         <p class="mt-6 text-xl text-[#09052B] font-lora font-bold" data-aos="fade-up">Welcome to Monty Finance SAL, where innovation meets integrity, and financial inclusion is our driving force.</p>
-                        <p class="mt-2 text-base text-[#73788B]" data-aos="fade-up">Monty Finance SAL is a licensed financial institution (No. 23 on the Central Bank of Lebanon's list), holding an e-wallet and international money remittance license. Through MyMonty, Monty Finance's innovative mobile application, users can effortlessly open accounts, manage their finances, and perform transactions and payments, all tailored to meet their needs. Monty Finance is a FinTech company committed to driving financial inclusion by fostering trust, empowering its clients, and meeting their financial service needs seamlessly, with lower fees, all from the comfort of their homes.</p>
+                        <p class="mt-2 text-base text-[#73788B]" data-aos="fade-up">Monty Finance SAL is a licensed financial institution, holding an e-wallet and international money remittance license. Through MyMonty, Monty Finance's innovative mobile application, users can effortlessly open accounts, manage their finances, and perform transactions and payments, all tailored to meet their needs. Monty Finance is a FinTech company committed to driving financial inclusion by fostering trust, empowering its clients, and meeting their financial service needs seamlessly, with lower fees, all from the comfort of their homes.</p>
                     </div>
                 </div>
                 <div class="flex-1">
+                    <img class="" src="/images/welcome-to-montyfinance.webp" alt="Welcome to Monty Finance" width="992" height="642" />
+                </div> 
+            </div>
+
+            <div class="flex max-lg:flex-col gap-12 lg:gap-24 xl:gap-48 mt-24">
+                <div class="flex-1 order-1 lg:order-0">
+                    <img class="" src="/images/bold-vision.webp" alt="Bold Vision" width="992" height="788" />
+                </div>
+                <div class="flex-1 order-0 lg:order-1">
                     <p class="mt-6 text-xl text-[#09052B] font-lora font-bold" data-aos="fade-up">At Monty Finance SAL, we firmly believe that access to financial services is a fundamental right.</p>
                     <p class="mt-2 text-base text-[#73788B]" data-aos="fade-up">Leveraging our team's local and international experience and  expertise, built over decades in leading financial and consulting firms, we are dedicated to developing tailored financial solutions that address the unique needs and challenges of the Lebanese community.</p>
-                    <p class="mt-6 text-xl text-[#09052B] font-lora font-bold" data-aos="fade-up">In light of the financial challenges Lebanon was facing, we at Monty Finance SAL are committed to a bold vision.</p>
-                    <p class="mt-2 text-base text-[#73788B]" data-aos="fade-up">Ensuring that every Lebanese citizen has unfettered access to essential financial services. Guided  by the visionary leadership of Mr. Mountasser El Hachem, Chairman of Monty Group, we have taken decisive steps to achieve this vision. With its innovative products, services, and ease of access, Monty Finance is poised to make a significant impact on Lebanon's financial landscape.</p>
+                    <p class="mt-6 text-xl text-[#09052B] font-lora font-bold" data-aos="fade-up">In light of the financial challenges Lebanon was facing, we at Monty Finance SAL are committed to a bold vision:</p>
+                    <p class="mt-2 text-base text-[#73788B]" data-aos="fade-up">Ensuring that every Lebanese citizen has unfettered access to essential financial services</p>
+                    <p class="mt-2 text-base text-[#73788B]" data-aos="fade-up">Guided  by the visionary leadership of Mr. Mountasser El Hachem, Chairman of Monty Group, we have taken decisive steps to achieve this vision. With its innovative products, services, and ease of access, Monty Finance is poised to make a significant impact on Lebanon's financial landscape.</p>
+                </div> 
+            </div>
+
+            <div class="flex max-lg:flex-col gap-12 lg:gap-24 xl:gap-48 mt-24">
+                <div class="flex-1 flex flex-col">
+                    <div class="flex flex-col gap-2">
+                        <p class="mt-6 text-xl text-[#09052B] font-lora font-bold" data-aos="fade-up">Committed to Sustainability with the UN Global Compact</p>
+                        <p class="mt-2 text-base text-[#73788B]" data-aos="fade-up">Monty Finance SAL is a proud participant in the United Nations Global Compact, the world’s largest corporate sustainability initiative. By aligning with its Ten Universal Principles in human rights, labor, environment, and anti-corruption, we are dedicated to conducting business ethically and responsibly. As part of a global network of 20,000+ companies, we actively support the Sustainable Development Goals (SDGs) and continuously work towards creating a positive and lasting impact.</p>
+                    </div>
                 </div>
+                <div class="flex-1">
+                    <img class="" src="/images/united-nations.webp" alt="United Nations" width="992" height="642" />
+                </div> 
             </div>
         </div>
     </section>
@@ -61,14 +83,14 @@
         </div>
     </section>
 
-    <section id="section-5" class="portfolio py-16 md:py-32 text-center mx-auto">
+    <section id="section-5" class="our-app py-16 md:py-32 text-center mx-auto">
         <div class="container">
             <div class="w-full md:w-3/5 mx-auto">
                 <div class="flex justify-center items-center gap-1 text-sm text-[#C7D165] font-libre font-bold uppercase" data-aos="fade-up">
                     <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#C7D165"/>
                     </svg>
-                    <h2>Affiliated With</h2>
+                    <h2>Our App</h2>
                 </div>
                 <h3 class="mt-6 text-2xl lg:text-5xl font-lora font-bold" data-aos="fade-up">Explore new ways to master your money</h3>
                 <button class="mt-3 md:mt-6 py-2 px-8 text-sm font-medium text-white bg-[#09052B] hover:bg-[#585E8D] rounded-full transition-[background] duration-300 ease-in-out" data-aos="fade-up">Learn more</button>
@@ -92,9 +114,9 @@
                 <div v-for="(item, index) in board" :key="item.id" class="backgroundBlur grid grid-cols-1 md:grid-cols-3 gap-8 rounded-xl p-6">
                     <div class="w-full relative">
                         <img class="max-md:w-full rounded-lg w-full" :src="item.image" :alt="item.name" />
-                        <a href="" class="flex absolute bottom-4 right-4" target="_blank" aria-label="Linkedin" rel="noopener">
+                        <!-- <a href="" class="flex absolute bottom-4 right-4" target="_blank" aria-label="Linkedin" rel="noopener">
                             <img src="/images/linkedin.svg" alt="Linkedin" width="30" height="30" />
-                        </a>
+                        </a> -->
                     </div>
                     <div class="md:col-span-2 flex flex-col mt-12">
                         <h5 class="text-base text-white uppercase font-bold">{{ item.role }}</h5>
@@ -267,7 +289,7 @@ const board = ref([
         name: 'Mountasser Hachem',
         role: 'Chairman',
         linkedin: '#',
-        description:'With more than 20 years leading a group of holdings, Mr. Hachem is always striving to make a difference in the lives of others even if it means taking risks and venturing into new fields.<br />Ambitious, bold and driven, he founded Monty Group and its subsidiaries and dove into the telecom world over two decades ago, building a successful career and transforming the company into an international hub with several branches all over the world.',
+        description:'Mr. Hachem is a seasoned entrepreneur with over 25 years of experience, whose visionary leadership has been crucial in shaping the success of Monty Group, a global company with subsidiaries across telecom, fintech, hospitality, and aviation. Known for his strategic foresight and risk-taking, he has driven the company’s growth by seizing opportunities in emerging industries and adapting to market shifts. Under his leadership, Monty Group has rapidly expanded its international presence and established a reputation for excellence, creating a lasting legacy of success. With a diverse portfolio that includes Monty Mobile, Monty eSIM, Monty Finance, MyMonty Europe, Monty Capital, and others, Mr. Hachem has solidified Monty Group’s position as a dynamic, multi-industry enterprise at the forefront of innovation and global business.',
     },
     {
         id: 2,

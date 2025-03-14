@@ -52,7 +52,7 @@
 
     const navLinks = [
         { text: 'About us', route: '/about-us', target: 'about-us' },
-        { text: 'Portfolio', route: '/portfolio', target: 'portfolio' },
+        { text: 'Our App', route: '/our-app', target: 'our-app' },
         { text: 'Board members', route: '/board-members', target: 'board' },
         { text: 'Contact us', route: '/contact-us', target: 'contact-us' },
     ];
