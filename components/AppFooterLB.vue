@@ -8,9 +8,9 @@
                         <NuxtLink :to="'/lb/cookies-policy'" class="hover:text-[#DFDFE0]">Cookies Policy</NuxtLink>
                         <NuxtLink :to="'/lb/data-protection-policy'" class="hover:text-[#DFDFE0]">Data Protection Policy</NuxtLink>
                         <NuxtLink :to="'/lb/terms-and-conditions'" class="hover:text-[#DFDFE0]">Terms and Conditions</NuxtLink>
-                        <a href="https://mymonty.com.lb/customer-rights-and-duties" class="hover:text-[#DFDFE0] underline underline-offset-4">Customer Rights and Duties</a>
-                        <a href="https://mymonty.vercel.app/complaints" class="hover:text-[#DFDFE0] underline underline-offset-4">Complaints</a>
-                        <a href="https://mymonty.vercel.app/key-facts-statements" class="hover:text-[#DFDFE0] underline underline-offset-4">Key Fact Statements</a>
+                        <a href="https://mymonty.com.lb/customer-rights-and-duties" class="hover:text-[#DFDFE0]">Customer Rights and Duties</a>
+                        <a href="https://mymonty.vercel.app/complaints" class="hover:text-[#DFDFE0]">Complaints</a>
+                        <a href="https://mymonty.vercel.app/key-facts-statements" class="hover:text-[#DFDFE0]">Key Fact Statements</a>
                     </div>
                 </div>
                 <!-- <div class="flex flex-col gap-1">

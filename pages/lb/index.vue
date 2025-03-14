@@ -39,7 +39,7 @@
                     <p class="mt-6 text-xl text-[#09052B] font-lora font-bold" data-aos="fade-up">At Monty Finance SAL, we firmly believe that access to financial services is a fundamental right.</p>
                     <p class="mt-2 text-base text-[#73788B]" data-aos="fade-up">Leveraging our team's local and international experience and  expertise, built over decades in leading financial and consulting firms, we are dedicated to developing tailored financial solutions that address the unique needs and challenges of the Lebanese community.</p>
                     <p class="mt-6 text-xl text-[#09052B] font-lora font-bold" data-aos="fade-up">In light of the financial challenges Lebanon was facing, we at Monty Finance SAL are committed to a bold vision:</p>
-                    <p class="mt-2 text-base text-[#73788B]" data-aos="fade-up">Ensuring that every Lebanese citizen has unfettered access to essential financial services</p>
+                    <p class="mt-2 text-base text-[#73788B]" data-aos="fade-up">Ensuring that every Lebanese citizen has unfettered access to essential financial services.</p>
                     <p class="mt-2 text-base text-[#73788B]" data-aos="fade-up">Guided  by the visionary leadership of Mr. Mountasser El Hachem, Chairman of Monty Group, we have taken decisive steps to achieve this vision. With its innovative products, services, and ease of access, Monty Finance is poised to make a significant impact on Lebanon's financial landscape.</p>
                 </div> 
             </div>
@@ -95,7 +95,7 @@
                 <h3 class="mt-6 text-2xl lg:text-5xl font-lora font-bold" data-aos="fade-up">Explore new ways to master your money</h3>
                 <button class="mt-3 md:mt-6 py-2 px-8 text-sm font-medium text-white bg-[#09052B] hover:bg-[#585E8D] rounded-full transition-[background] duration-300 ease-in-out" data-aos="fade-up">Learn more</button>
             </div>
-            <img class="mt-8" src="/images/affiliated-with.webp" alt="Affiliated With" width="2496" height="1077"/>
+            <img class="mt-8" src="/images/affiliated-with.webp" alt="Affiliated With" width="2480" height="1052"/>
         </div>
     </section>
 
@@ -218,21 +218,21 @@
                 <div class="w-full lg:w-2/5">
                     <div class="flex flex-col justify-center items-stretch gap-8">
                         <div class="flex-1 p-6 md:p-12 bg-gray-100 rounded">
-                            <h2 class="mt-2 text-3xl text-[#585E8D] font-lora font-bold">Head Office Address</h2>
-                            <p class="block mt-2 text-2xl text-[#73788B]">Gefinor Center, Clemenceau Street, Hamra, Beirut, Lebanon"</p>
+                            <h2 class="mt-2 text-2xl text-[#585E8D] font-lora font-bold">Head Office Address</h2>
+                            <p class="block mt-2 text-xl text-[#73788B]">Gefinor Center, Clemenceau Street, Hamra, Beirut, Lebanon"</p>
                         </div>
                         <div class="flex-1 p-6 md:p-12 bg-gray-100 rounded">
-                            <h2 class="mt-2 text-3xl text-[#585E8D] font-lora font-bold">Customer Support</h2>
-                            <a href="mailto:info@montyfinance.com" class="block mt-2 text-2xl text-[#73788B]">info@montyfinance.com</a>
+                            <h2 class="mt-2 text-2xl text-[#585E8D] font-lora font-bold">Customer Support</h2>
+                            <a href="mailto:info@montyfinance.com" class="block mt-2 text-xl text-[#73788B]">info@montyfinance.com</a>
                         </div>
                         <div class="flex flex-col lg:flex-row gap-8">
                             <div class="flex-1 p-6 md:p-12 bg-gray-100 rounded">
-                                <h2 class="mt-2 text-3xl text-[#585E8D] font-lora font-bold">Call Center</h2>
-                                <p class="block mt-2 text-2xl text-[#73788B]">+961 1 734 020</p>
+                                <h2 class="mt-2 text-2xl text-[#585E8D] font-lora font-bold">Call Center</h2>
+                                <p class="block mt-2 text-xl text-[#73788B]">+961 1 734 020</p>
                             </div>
                             <div class="flex-1 p-6 md:p-12 bg-gray-100 rounded">
-                                <h2 class="mt-2 text-3xl text-[#585E8D] font-lora font-bold">WhatsApp</h2>
-                                <a href="mailto:info@montyfinance.com" class="block mt-2 text-2xl text-[#73788B]">+961 71 871 871</a>
+                                <h2 class="mt-2 text-2xl text-[#585E8D] font-lora font-bold">WhatsApp</h2>
+                                <a href="mailto:info@montyfinance.com" class="block mt-2 text-xl text-[#73788B]">+961 71 871 871</a>
                             </div>
                         </div>
                     </div>
