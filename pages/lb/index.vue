@@ -118,7 +118,7 @@
                             <img src="/images/linkedin.svg" alt="Linkedin" width="30" height="30" />
                         </a> -->
                     </div>
-                    <div class="md:col-span-2 flex flex-col mt-12">
+                    <div class="md:col-span-2 flex flex-col">
                         <h5 class="text-base text-white uppercase font-bold">{{ item.role }}</h5>
                         <h4 class="text-xl font-lora text-[#DFDFE0] font-bold mt-1">{{ item.name }}</h4>
                         <p class="text-base text-[#DFDFE0] mt-4" v-html="item.description"></p>
@@ -141,7 +141,7 @@
                     <h3 class="mt-6 text-2xl lg:text-5xl font-lora font-bold">Reach out to us today</h3>
                     <p class="flex items-center gap-2 mt-6 text-base text-[#73788B]">Our team is always ready to assist you or answer your inquiries.<br />Fill out this form to reach us.</p>
 
-                    <div class="flex flex-col gap-12 mt-8">
+                    <div class="flex flex-col gap-6 lg:gap-12 mt-8">
                         <div class="flex flex-col md:flex-row gap-6 w-full">
                             <div class="flex flex-col gap-1 w-full">
                                 <input v-model="form.full_name" type="text" id="full_name" placeholder="Full Name" class="w-full text-sm px-3 py-2 text-black border-b border-b-[#D0D5DD] outline-none">
