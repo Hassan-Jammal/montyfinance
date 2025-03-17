@@ -19,7 +19,7 @@
         </div>
     </section>
 
-    <section class="py-16 md:py-32 mx-auto">
+    <section class="py-16 md:py-16 mx-auto">
         <div class="container">
             <div class="mt-24">
                 <div v-for="(section, index) in sections" :key="index" class="flex max-lg:flex-col gap-12 lg:gap-24 xl:gap-48 mt-24">

@@ -5,13 +5,13 @@
                 <div class="w-full flex max-md:flex-col justify-between lg:items-end gap-10">
                     <AppLogoWhite class="shrink-0" />
                     <div class="flex flex-col gap-4 text-white text-base">
-                        <div class="flex max-md:flex-col lg:items-center gap-4 lg:gap-12">
+                        <div class="flex max-md:flex-col lg:items-center gap-4 lg:gap-12 text-sm justify-end">
                             <NuxtLink :to="'/lb/code-of-conduct'" class="hover:text-[#DFDFE0]">Code Of Conduct</NuxtLink>
                             <NuxtLink :to="'/lb/cookies-policy'" class="hover:text-[#DFDFE0]">Cookies Policy</NuxtLink>
                             <NuxtLink :to="'/lb/data-protection-policy'" class="hover:text-[#DFDFE0]">Data Protection Policy</NuxtLink>
                             <NuxtLink :to="'/lb/terms-and-conditions'" class="hover:text-[#DFDFE0]">Terms and Conditions</NuxtLink>
                         </div>
-                        <div class="flex max-md:flex-col lg:items-center gap-4 lg:gap-12">
+                        <div class="flex max-md:flex-col lg:items-center gap-4 lg:gap-12 justify-end">
                             <a href="https://mymonty.com.lb/customer-rights-and-duties" class="hover:text-[#DFDFE0]">Customer Rights and Duties</a>
                             <a href="https://mymonty.vercel.app/complaints" class="hover:text-[#DFDFE0]">Complaints</a>
                             <a href="https://mymonty.vercel.app/key-facts-statements" class="hover:text-[#DFDFE0]">Key Fact Statements</a>
@@ -32,7 +32,7 @@
 
             <hr class="my-6" />
 
-            <p class="text-white text-base opacity-80">Monty Finance S.A.L. Capital: 50.000.000.000 LBP. Head Office: Gefinor Center, Clemenceau Street, Hamra, Beirut, Lebanon. ROC Beirut No. 73215. Authorized by the Banque du Liban (“BDL”) to operate as a financial institution and an e-wallet service provider. Listed on BDL’s list of financial institutions under No. 23.</p>
+            <p class="text-sm text-white text-base opacity-80">Monty Finance S.A.L. Capital: 50.000.000.000 LBP. Head Office: Gefinor Center, Clemenceau Street, Hamra, Beirut, Lebanon. ROC Beirut No. 73215. Authorized by the Banque du Liban (“BDL”) to operate as a financial institution and an e-wallet service provider. Listed on BDL’s list of financial institutions under No. 23.</p>
             <!-- <div class="flex justify-between items-between gap-4">
                 <div class="flex items-center gap-4">
                     <a class="flex" href="" target="_blank" aria-label="Linkedin" rel="noopener">

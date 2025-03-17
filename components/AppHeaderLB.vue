@@ -25,8 +25,12 @@
                         </ul>
                     </nav>
                     <div class="block lg:hidden leading-[0] text-[#09052B] text-3xl cursor-pointer" @click="toggleNav">
-                        <img v-if="!navVisible" src="/images/burger.svg" alt="Bars" width="25" height="25" />
-						<img v-if="navVisible" src="/images/close.svg" alt="Close" width="25" height="25" />
+                        <svg class="nav-icon" v-if="!navVisible" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="25" height="25">
+                            <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"/>
+                        </svg>
+                        <svg class="nav-icon" v-if="navVisible" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 24 24">
+                            <path d="M 4.2382812 2.9882812 A 1.250125 1.250125 0 0 0 3.3671875 5.1347656 L 10.232422 12 L 3.3613281 18.869141 A 1.2512475 1.2512475 0 1 0 5.1308594 20.638672 L 12 13.767578 L 18.865234 20.632812 A 1.250125 1.250125 0 1 0 20.632812 18.865234 L 13.767578 12 L 20.625 5.1425781 A 1.250125 1.250125 0 1 0 18.857422 3.375 L 12 10.232422 L 5.1347656 3.3671875 A 1.250125 1.250125 0 0 0 4.2382812 2.9882812 z"></path>
+                        </svg>
                     </div>
                 </div>
             </div>
@@ -64,13 +68,13 @@
         backdrop-filter: blur(10px)
         background-color: hsla(0, 0%, 100%, .8)
 
-    header.background .logo, header .logo
+    header.background .logo, header .logo, header.background .nav-icon, header .nav-icon
         fill: #09052B
 
-    .homepage header.background .logo
+    .homepage header.background .logo, .homepage header.background .nav-icon
         fill: #09052B
 
-    .homepage header .logo
+    .homepage header .logo, .homepage header .nav-icon
         fill: #FFFFFF
 
     header.background .arrow-down path, header .arrow-down path

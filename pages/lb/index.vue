@@ -58,7 +58,7 @@
         </div>
     </section>
 
-    <section id="section-4" class="py-16 md:py-32 text-white">
+    <section id="section-4" class="text-white">
         <div class="container">
             <div class="px-8 md:px-16 py-16 md:py-32 bg-[url('public/images/mission-vision-lb.webp')] bg-no-repeat bg-cover bg-top flex max-md:flex-col justify-center items-stretch gap-14 md:gap-28 rounded-xl">
                 <div class="backgroundBlur flex-1 p-6 rounded-xl">
@@ -66,18 +66,18 @@
                         <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#FFFFFF"/>
                         </svg>
-                        <h2 class="mt-2 text-2xl lg:text-5xl font-lora font-bold">Mission</h2>
+                        <h2 class="mt-2 text-2xl lg:text-4xl font-lora font-bold">Mission</h2>
                     </div>
-                    <p class="mt-8">Simplify digital payments, inspire trust, lead innovation and contribute to financial inclusion.</p>
+                    <p class="text-base mt-8">Simplify digital payments, inspire trust, lead innovation and contribute to financial inclusion.</p>
                 </div>
                 <div class="backgroundBlur flex-1 p-6 rounded-xl">
                     <div class="flex items-start gap-4" data-aos="fade-up">
                         <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#FFFFFF"/>
                         </svg>
-                        <h2 class="mt-2 text-2xl lg:text-5xl font-lora font-bold">Vision</h2>
+                        <h2 class="mt-2 text-2xl lg:text-4xl font-lora font-bold">Vision</h2>
                     </div>
-                    <p class="mt-8">To become a global digital financial services enabler.</p>
+                    <p class="text-base mt-8">To become a global digital financial services enabler.</p>
                 </div>
             </div>
         </div>
@@ -107,13 +107,13 @@
                 </svg>
                 <h2>Board Members</h2>
             </div>
-            <h3 class="my-6 text-2xl lg:text-5xl font-lora font-bold text-white" data-aos="fade-up">The faces behind Monty Finance</h3>
+            <h3 class="mt-6 text-2xl lg:text-5xl font-lora font-bold text-white" data-aos="fade-up">The faces behind Monty Finance</h3>
 
-            <div class="flex flex-col gap-4">
+            <div class="flex flex-col gap-4 mt-12">
                 <!-- Big Item -->
-                <div v-for="(item, index) in board" :key="item.id" class="backgroundBlur grid grid-cols-1 md:grid-cols-3 gap-8 rounded-xl p-6">
+                <div v-for="(item, index) in board" :key="item.id" class="backgroundBlur flex gap-8 rounded-xl p-6">
                     <div class="w-full relative">
-                        <img class="max-md:w-full rounded-lg w-full" :src="item.image" :alt="item.name" />
+                        <img class="rounded-lg w-full" :src="item.image" :alt="item.name" />
                         <!-- <a href="" class="flex absolute bottom-4 right-4" target="_blank" aria-label="Linkedin" rel="noopener">
                             <img src="/images/linkedin.svg" alt="Linkedin" width="30" height="30" />
                         </a> -->
@@ -121,7 +121,7 @@
                     <div class="md:col-span-2 flex flex-col mt-12">
                         <h5 class="text-base text-white uppercase font-bold">{{ item.role }}</h5>
                         <h4 class="text-xl font-lora text-[#DFDFE0] font-bold mt-1">{{ item.name }}</h4>
-                        <p class="sm:text-base xl:text-lg text-[#DFDFE0] mt-4" v-html="item.description"></p>
+                        <p class="text-base text-[#DFDFE0] mt-4" v-html="item.description"></p>
                     </div>
                 </div>
             </div>
@@ -132,14 +132,14 @@
         <div class="container">
             <div class="flex max-md:flex-col items-center gap-24">
                 <div class="w-full lg:w-3/5">
-                    <div class="flex items-center gap-1 text-sm text-[#C7D165] font-libre font-bold uppercase" data-aos="fade-up">
+                    <div class="flex items-center gap-1 text-sm text-[#C7D165] font-libre font-bold uppercase">
                         <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#C7D165"/>
                         </svg>
                         <h2>Contact Us</h2>
                     </div>
-                    <h3 class="mt-6 text-2xl lg:text-5xl font-lora font-bold" data-aos="fade-up">Reach out to us today</h3>
-                    <p class="flex items-center gap-2 mt-6 text-base text-[#73788B]" data-aos="fade-up">Our team is always ready to assist you or answer your inquiries.<br />Fill out this form to reach us.</p>
+                    <h3 class="mt-6 text-2xl lg:text-5xl font-lora font-bold">Reach out to us today</h3>
+                    <p class="flex items-center gap-2 mt-6 text-base text-[#73788B]">Our team is always ready to assist you or answer your inquiries.<br />Fill out this form to reach us.</p>
 
                     <div class="flex flex-col gap-12 mt-8">
                         <div class="flex flex-col md:flex-row gap-6 w-full">
@@ -208,7 +208,7 @@
                             </div>
                         </div>
                         
-                        <div class="flex flex-col md:flex-row gap-6 w-full" data-aos="fade-up">
+                        <div class="flex flex-col md:flex-row gap-6 w-full">
                             <button type="submit" id="submit" class="px-14 py-3 text-white text-center bg-[#585E8D] hover:bg-[#09052B] rounded-full transition-[background] duration-300 ease-in-out font-semibold" @click.prevent="handleSubmit">Send message</button>
                         </div>
                     </div>
@@ -219,20 +219,20 @@
                     <div class="flex flex-col justify-center items-stretch gap-8">
                         <div class="flex-1 p-6 md:p-12 bg-gray-100 rounded">
                             <h2 class="mt-2 text-2xl text-[#585E8D] font-lora font-bold">Head Office Address</h2>
-                            <p class="block mt-2 text-xl text-[#73788B]">Gefinor Center, Clemenceau Street, Hamra, Beirut, Lebanon"</p>
+                            <p class="block mt-2 text-base text-[#73788B]">Gefinor Center, Clemenceau Street, Hamra, Beirut, Lebanon"</p>
                         </div>
                         <div class="flex-1 p-6 md:p-12 bg-gray-100 rounded">
                             <h2 class="mt-2 text-2xl text-[#585E8D] font-lora font-bold">Customer Support</h2>
-                            <a href="mailto:info@montyfinance.com" class="block mt-2 text-xl text-[#73788B]">info@montyfinance.com</a>
+                            <a href="mailto:info@montyfinance.com" class="block mt-2 text-base text-[#73788B]">info@montyfinance.com</a>
                         </div>
                         <div class="flex flex-col lg:flex-row gap-8">
                             <div class="flex-1 p-6 md:p-12 bg-gray-100 rounded">
                                 <h2 class="mt-2 text-2xl text-[#585E8D] font-lora font-bold">Call Center</h2>
-                                <p class="block mt-2 text-xl text-[#73788B]">+961 1 734 020</p>
+                                <p class="block mt-2 text-base text-[#73788B]">+961 1 734 020</p>
                             </div>
                             <div class="flex-1 p-6 md:p-12 bg-gray-100 rounded">
                                 <h2 class="mt-2 text-2xl text-[#585E8D] font-lora font-bold">WhatsApp</h2>
-                                <a href="mailto:info@montyfinance.com" class="block mt-2 text-xl text-[#73788B]">+961 71 871 871</a>
+                                <a href="mailto:info@montyfinance.com" class="block mt-2 text-base text-[#73788B]">+961 71 871 871</a>
                             </div>
                         </div>
                     </div>
