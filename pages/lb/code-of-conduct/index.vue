@@ -23,14 +23,14 @@
         <div class="container">
             <div class="mt-24">
                 <div v-for="(section, index) in sections" :key="index" class="flex max-lg:flex-col gap-12 lg:gap-24 xl:gap-48 mt-24">
-                    <div class="flex-1" :class="{ 'lg:order-1': index % 2 !== 0 }">
-                        <img :src="`/images/${section.image}.webp`" :alt="section.title" width="992" height="788" />
-                    </div>
-                    <div class="flex-1 flex flex-col justify-center" :class="{ 'lg:order-0': index % 2 !== 0 }">
+                    <div class="flex-1 flex flex-col justify-center" :class="{ 'lg:order-1': index % 2 !== 0 }">
                         <p class="text-xl text-[#09052B] font-lora font-bold">{{ section.title }}</p>
                         <ol class="mt-6 text-base text-[#73788B] list-decimal px-4">
                             <li v-for="(point, i) in section.points" :key="i">{{ point }}</li>
                         </ol>
+                    </div>
+                    <div class="flex-1" :class="{ 'lg:order-0': index % 2 !== 0 }">
+                        <img :src="`/images/${section.image}.webp`" :alt="section.title" width="992" height="788" />
                     </div>
                 </div>
             </div>
