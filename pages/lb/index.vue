@@ -31,7 +31,7 @@
                 </div> 
             </div>
 
-            <div class="flex max-lg:flex-col gap-12 lg:gap-24 xl:gap-48 mt-24">
+            <div class="flex max-lg:flex-col gap-12 lg:gap-24 xl:gap-48 mt-12 lg:mt-24">
                 <div class="flex-1 order-1 lg:order-0">
                     <img class="" src="/images/bold-vision.webp" alt="Bold Vision" width="992" height="788" />
                 </div>
@@ -44,7 +44,7 @@
                 </div> 
             </div>
 
-            <div class="flex max-lg:flex-col gap-12 lg:gap-24 xl:gap-48 mt-24">
+            <div class="flex max-lg:flex-col gap-12 lg:gap-24 xl:gap-48 mt-12 lg:mt-24">
                 <div class="flex-1 flex flex-col">
                     <div class="flex flex-col gap-2">
                         <p class="mt-6 text-xl text-[#09052B] font-lora font-bold" data-aos="fade-up">Committed to Sustainability with the UN Global Compact</p>
@@ -68,7 +68,7 @@
                         </svg>
                         <h2 class="mt-2 text-2xl lg:text-4xl font-lora font-bold">Mission</h2>
                     </div>
-                    <p class="text-base mt-8">Simplify digital payments, inspire trust, lead innovation and contribute to financial inclusion.</p>
+                    <p class="text-base mt-4 lg:mt-8">Simplify digital payments, inspire trust, lead innovation and contribute to financial inclusion.</p>
                 </div>
                 <div class="backgroundBlur flex-1 p-6 rounded-xl">
                     <div class="flex items-start gap-4" data-aos="fade-up">
@@ -77,7 +77,7 @@
                         </svg>
                         <h2 class="mt-2 text-2xl lg:text-4xl font-lora font-bold">Vision</h2>
                     </div>
-                    <p class="text-base mt-8">To become a global digital financial services enabler.</p>
+                    <p class="text-base mt-4 lg:mt-8">To become a global digital financial services enabler.</p>
                 </div>
             </div>
         </div>
@@ -111,7 +111,7 @@
 
             <div class="flex flex-col gap-4 mt-12">
                 <!-- Big Item -->
-                <div v-for="(item, index) in board" :key="item.id" class="backgroundBlur flex gap-8 rounded-xl p-6">
+                <div v-for="(item, index) in board" :key="item.id" class="backgroundBlur flex max-md:flex-col gap-8 rounded-xl p-6">
                     <div class="w-full relative">
                         <img class="rounded-lg w-full" :src="item.image" :alt="item.name" />
                         <!-- <a href="" class="flex absolute bottom-4 right-4" target="_blank" aria-label="Linkedin" rel="noopener">
@@ -216,7 +216,7 @@
                     <div v-if="submissionMessage" class="mt-4 text-xs" :class="{'text-red-500': isError, 'text-gray-500': !isError}">{{ submissionMessage }}</div>
                 </div>
                 <div class="w-full lg:w-2/5">
-                    <div class="flex flex-col justify-center items-stretch gap-8">
+                    <div class="flex flex-col justify-center items-stretch gap-4 lg:gap-8">
                         <div class="flex-1 p-6 md:p-12 bg-gray-100 rounded">
                             <h2 class="mt-2 text-2xl text-[#585E8D] font-lora font-bold">Head Office Address</h2>
                             <p class="block mt-2 text-base text-[#73788B]">Gefinor Center, Clemenceau Street, Hamra, Beirut, Lebanon"</p>
@@ -225,7 +225,7 @@
                             <h2 class="mt-2 text-2xl text-[#585E8D] font-lora font-bold">Customer Support</h2>
                             <a href="mailto:info@montyfinance.com" class="block mt-2 text-base text-[#73788B]">info@montyfinance.com</a>
                         </div>
-                        <div class="flex flex-col lg:flex-row gap-8">
+                        <div class="flex flex-col lg:flex-row gap-4 lg:gap-8">
                             <div class="flex-1 p-6 md:p-12 bg-gray-100 rounded">
                                 <h2 class="mt-2 text-2xl text-[#585E8D] font-lora font-bold">Call Center</h2>
                                 <p class="block mt-2 text-base text-[#73788B]">+961 1 734 020</p>
