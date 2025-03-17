@@ -4,10 +4,10 @@
             <div class="container flex justify-between items-center">
                 <div class="flex items-center gap-4">
                     <NuxtLink :to="'/lb'">
-                        <AppLogo :color="isOnTop ? '#FFFFFF' : '#09052B'" />
+                        <AppLogo class="logo" />
                     </NuxtLink>
-                    <svg @click="toggleLocationDropdown" class="cursor-pointer" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 9.33154L12 15.3315L18 9.33154" :stroke="isOnTop ? '#FFFFFF' : '#09052B'" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg @click="toggleLocationDropdown" class="arrow-down cursor-pointer" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9.33154L12 15.3315L18 9.33154" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                     <div v-if="locationVisible" :class="{ '-translate-y-full': isScrolledDown && !navVisible}" class="absolute top-[calc(100%+1.5rem)] left-0 w-full flex justify-center items-center rounded-b bg-white z-10 transition-all duration-300 ease-in-out">
                         <!-- <div @click="manualRoute('eu')" class="flex flex-col justify-center items-center w-full py-3 text-[#09052B] cursor-pointer">Europe</div> -->
@@ -63,5 +63,22 @@
         -webkit-backdrop-filter: blur(10px)
         backdrop-filter: blur(10px)
         background-color: hsla(0, 0%, 100%, .8)
-    
+
+    header.background .logo, header .logo
+        fill: #09052B
+
+    .homepage header.background .logo
+        fill: #09052B
+
+    .homepage header .logo
+        fill: #FFFFFF
+
+    header.background .arrow-down path, header .arrow-down path
+        stroke: #09052B
+
+    .homepage header.background .arrow-down path
+        stroke: #09052B
+
+    .homepage header .arrow-down path
+        stroke: #FFFFFF
 </style>

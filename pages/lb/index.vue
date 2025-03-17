@@ -258,6 +258,13 @@ useSeoMeta({
     twitterCard: 'summary_large_image',
 })
 
+    // Set the class on the <body> tag
+    useHead({
+        bodyAttrs: {
+            class: 'homepage'
+        }
+    });
+
 const { selectedCountry, detectCountry, countriesData } = useCountry();
 
 const emit = defineEmits();
