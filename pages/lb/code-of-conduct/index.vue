@@ -39,6 +39,19 @@
 </template>
 
 <script setup>
+    useSeoMeta({
+        title: 'Code of Conduct',
+        description: '',
+
+        ogTitle: 'Code of Conduct',
+        ogDescription: '',
+        ogImage: '/assets/images/share-image-team.webp',
+
+        twitterTitle: 'Code of Conduct',
+        twitterDescription: '',
+        twitterCard: 'summary_large_image',
+    })
+
     const sections = [
         {
             title: 'Professionalism',

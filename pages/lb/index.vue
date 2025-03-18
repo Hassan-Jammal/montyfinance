@@ -2,7 +2,7 @@
     <section id="section-1" class="flex flex-col justify-center items-center h-screen bg-[url('public/images/banner-lb.webp')] bg-no-repeat bg-cover bg-center">
         <div class="container">
             <div class="flex flex-col justify-center gap-4 w-full md:w-1/2 xl:w-1/3 h-full">
-                <h1 class="text-white text-2xl lg:text-[3rem] font-lora !leading-[1.3] font-bold" data-aos="fade-up" data-aos-delay="100"><span class="block text-white font-medium">Empowering Every Lebanese</span>with Inclusive Access to Essential Financial Services</h1>
+                <h1 class="text-white text-2xl lg:text-[3rem] font-lora !leading-[1.3]" data-aos="fade-up" data-aos-delay="100"><span class="block text-white font-medium">Empowering Every Lebanese</span>with Inclusive Access to Essential Financial Services</h1>
                 <div data-aos="fade-up" data-aos-delay="200">
                     <ScrollButton target="contact-us" class="mt-3 md:mt-6 py-2 px-8 text-sm font-medium text-black bg-[#C7D165] hover:bg-white rounded-full transition-[background] duration-300 ease-in-out" >Contact us</ScrollButton>
                 </div>
@@ -23,7 +23,7 @@
                     <h3 class="mt-6 text-2xl lg:text-5xl font-lora font-bold" data-aos="fade-up">Unlocking your financial freedom with confidence</h3>
                     <div class="flex flex-col gap-2">
                         <p class="mt-6 text-xl text-[#09052B] font-lora font-bold" data-aos="fade-up">Welcome to Monty Finance SAL, where innovation meets integrity, and financial inclusion is our driving force.</p>
-                        <p class="mt-2 text-base text-[#73788B]" data-aos="fade-up">Monty Finance SAL is a licensed financial institution, holding an e-wallet and international money remittance license. Through MyMonty, Monty Finance's innovative mobile application, users can effortlessly open accounts, manage their finances, and perform transactions and payments, all tailored to meet their needs. Monty Finance is a FinTech company committed to driving financial inclusion by fostering trust, empowering its clients, and meeting their financial service needs seamlessly, with lower fees, all from the comfort of their homes.</p>
+                        <p class="mt-2 text-base text-[#73788B]" data-aos="fade-up">Monty Finance SAL is a FinTech company committed to driving financial inclusion by fostering trust, empowering its clients, and meeting their financial service needs seamlessly. It is a licensed financial institution, holding an e-wallet and international money remittance license. Through MyMonty, Monty Finance's innovative mobile application, users can effortlessly open eWallet accounts, manage their finances, and perform transactions and payments, all tailored to meet their needs with lower fees, all from the comfort of their homes.</p>
                     </div>
                 </div>
                 <div class="flex-1">
@@ -39,7 +39,7 @@
                     <p class="mt-6 text-xl text-[#09052B] font-lora font-bold" data-aos="fade-up">At Monty Finance SAL, we firmly believe that access to financial services is a fundamental right.</p>
                     <p class="mt-2 text-base text-[#73788B]" data-aos="fade-up">Leveraging our team's local and international experience and  expertise, built over decades in leading financial and consulting firms, we are dedicated to developing tailored financial solutions that address the unique needs and challenges of the Lebanese community.</p>
                     <p class="mt-6 text-xl text-[#09052B] font-lora font-bold" data-aos="fade-up">In light of the financial challenges Lebanon was facing, we at Monty Finance SAL are committed to a bold vision:</p>
-                    <p class="mt-2 text-base text-[#73788B]" data-aos="fade-up">Ensuring that every Lebanese citizen has unfettered access to essential financial services.</p>
+                    <p class="mt-2 text-base text-[#73788B]" data-aos="fade-up">Ensuring that the Lebanese people, diaspora, and residents have unfettered access to essential financial services.</p>
                     <p class="mt-2 text-base text-[#73788B]" data-aos="fade-up">Guided  by the visionary leadership of Mr. Mountasser El Hachem, Chairman of Monty Group, we have taken decisive steps to achieve this vision. With its innovative products, services, and ease of access, Monty Finance is poised to make a significant impact on Lebanon's financial landscape.</p>
                 </div> 
             </div>
@@ -95,7 +95,7 @@
                 <h3 class="mt-6 text-2xl lg:text-5xl font-lora font-bold" data-aos="fade-up">Explore new ways to master your money</h3>
                 <button class="mt-3 md:mt-6 py-2 px-8 text-sm font-medium text-white bg-[#09052B] hover:bg-[#585E8D] rounded-full transition-[background] duration-300 ease-in-out" data-aos="fade-up">Learn more</button>
             </div>
-            <img class="mt-8" src="/images/affiliated-with.webp" alt="Affiliated With" width="2480" height="1052"/>
+            <img class="mt-8" src="/images/our-app.webp" alt="Our app" width="2480" height="1052"/>
         </div>
     </section>
 
@@ -112,13 +112,13 @@
             <div class="flex flex-col gap-4 mt-12">
                 <!-- Big Item -->
                 <div v-for="(item, index) in board" :key="item.id" class="backgroundBlur flex max-md:flex-col gap-8 rounded-xl p-6">
-                    <div class="w-full relative">
+                    <div class="lg:w-1/5 relative">
                         <img class="rounded-lg w-full" :src="item.image" :alt="item.name" />
                         <!-- <a href="" class="flex absolute bottom-4 right-4" target="_blank" aria-label="Linkedin" rel="noopener">
                             <img src="/images/linkedin.svg" alt="Linkedin" width="30" height="30" />
                         </a> -->
                     </div>
-                    <div class="md:col-span-2 flex flex-col">
+                    <div class="lg:w-4/5 flex flex-col">
                         <h5 class="text-base text-white uppercase font-bold">{{ item.role }}</h5>
                         <h4 class="text-xl font-lora text-[#DFDFE0] font-bold mt-1">{{ item.name }}</h4>
                         <p class="text-base text-[#DFDFE0] mt-4" v-html="item.description"></p>
@@ -219,7 +219,7 @@
                     <div class="flex flex-col justify-center items-stretch gap-4 lg:gap-8">
                         <div class="flex-1 p-6 md:p-12 bg-gray-100 rounded">
                             <h2 class="mt-2 text-2xl text-[#585E8D] font-lora font-bold">Head Office Address</h2>
-                            <p class="block mt-2 text-base text-[#73788B]">Gefinor Center, Clemenceau Street, Hamra, Beirut, Lebanon"</p>
+                            <p class="block mt-2 text-base text-[#73788B]">Gefinor Center, Clemenceau Street, Hamra, Beirut, Lebanon</p>
                         </div>
                         <div class="flex-1 p-6 md:p-12 bg-gray-100 rounded">
                             <h2 class="mt-2 text-2xl text-[#585E8D] font-lora font-bold">Customer Support</h2>

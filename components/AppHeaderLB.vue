@@ -1,6 +1,6 @@
 <template lang="">
     <header id="header" class="fixed top-0 left-0 w-full z-40 min-h-[88px] transition-all duration-300 ease-in-out" :class="{ '-translate-y-full': isScrolledDown, 'background': !isOnTop, 'translate-y-0 nav-visible': navVisible }">
-        <div class="w-full py-6 border-b border-[#e9edf422] z-[3]">
+        <div class="w-full py-6 z-[3]">
             <div class="container flex justify-between items-center">
                 <div class="flex items-center gap-4">
                     <NuxtLink :to="'/lb'">

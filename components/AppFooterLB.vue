@@ -4,8 +4,8 @@
             <div class="flex flex-col md:flex-row justify-between items-center md:items-end gap-4">
                 <div class="w-full flex max-md:flex-col justify-between lg:items-end gap-10">
                     <AppLogoWhite class="shrink-0" />
-                    <div class="flex flex-col gap-4 text-white text-base">
-                        <div class="flex max-md:flex-col lg:items-center gap-4 lg:gap-12 text-sm justify-end">
+                    <div class="flex flex-col gap-4 text-white text-sm">
+                        <div class="flex max-md:flex-col lg:items-center gap-4 lg:gap-12 justify-end">
                             <NuxtLink :to="'/lb/code-of-conduct'" class="hover:text-[#DFDFE0]">Code Of Conduct</NuxtLink>
                             <NuxtLink :to="'/lb/cookies-policy'" class="hover:text-[#DFDFE0]">Cookies Policy</NuxtLink>
                             <NuxtLink :to="'/lb/data-protection-policy'" class="hover:text-[#DFDFE0]">Data Protection Policy</NuxtLink>
