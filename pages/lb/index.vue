@@ -93,7 +93,7 @@
                     <h2>Our App</h2>
                 </div>
                 <h3 class="mt-6 text-2xl lg:text-5xl font-lora font-bold" data-aos="fade-up">Explore new ways to master your money</h3>
-                <button class="mt-3 md:mt-6 py-2 px-8 text-sm font-medium text-white bg-[#09052B] hover:bg-[#585E8D] rounded-full transition-[background] duration-300 ease-in-out" data-aos="fade-up">Learn more</button>
+                <!-- <button class="mt-3 md:mt-6 py-2 px-8 text-sm font-medium text-white bg-[#09052B] hover:bg-[#585E8D] rounded-full transition-[background] duration-300 ease-in-out" data-aos="fade-up">Learn more</button> -->
             </div>
             <img class="mt-8" src="/images/our-app.webp" alt="Our app" width="2480" height="1052"/>
         </div>
@@ -232,7 +232,7 @@
                             </div>
                             <div class="flex-1 p-6 md:p-12 bg-gray-100 rounded">
                                 <h2 class="mt-2 text-2xl text-[#585E8D] font-lora font-bold">WhatsApp</h2>
-                                <a href="mailto:info@montyfinance.com" class="block mt-2 text-base text-[#73788B]">+961 71 871 871</a>
+                                <a href="https://wa.me/96171871871" class="block mt-2 text-base text-[#73788B]">+961 71 871 871</a>
                             </div>
                         </div>
                     </div>
@@ -243,20 +243,20 @@
 </template>
 
 <script setup>
-import { useCountry } from '~/composables/useCountry';
+    import { useCountry } from '~/composables/useCountry';
 
-useSeoMeta({
-    title: 'Homepage Lebanon',
-    description: '',
+    useSeoMeta({
+        title: 'Homepage Lebanon',
+        description: '',
 
-    ogTitle: 'Homepage Lebanon',
-    ogDescription: '',
-    ogImage: '/assets/images/share-image-team.webp',
+        ogTitle: 'Homepage Lebanon',
+        ogDescription: '',
+        ogImage: '/assets/images/share-image-team.webp',
 
-    twitterTitle: 'Homepage Lebanon',
-    twitterDescription: '',
-    twitterCard: 'summary_large_image',
-})
+        twitterTitle: 'Homepage Lebanon',
+        twitterDescription: '',
+        twitterCard: 'summary_large_image',
+    })
 
     // Set the class on the <body> tag
     useHead({
@@ -265,230 +265,77 @@ useSeoMeta({
         }
     });
 
-const { selectedCountry, detectCountry, countriesData } = useCountry();
+    const { selectedCountry, detectCountry, countriesData } = useCountry();
 
-const emit = defineEmits();
+    const emit = defineEmits();
 
-const route = useRoute();
-const currentPath = route.path;
-const currentRoute = computed(() => route.path);
+    const route = useRoute();
+    const currentPath = route.path;
+    const currentRoute = computed(() => route.path);
 
-// Country-related State
-const countries = ref([]);
-const showDropdown = ref(false);
-const placeholder = 'Code';
-const filteredCountries = ref([]);
-const searchQuery = ref('');
-const dropdownContainer = ref(null);
-const lastLoadedIndex = ref(0);
-const searchFlag = ref(false);
-const initialCode = ref(''); // Store initial value
+    // Country-related State
+    const countries = ref([]);
+    const showDropdown = ref(false);
+    const placeholder = 'Code';
+    const filteredCountries = ref([]);
+    const searchQuery = ref('');
+    const dropdownContainer = ref(null);
+    const lastLoadedIndex = ref(0);
+    const searchFlag = ref(false);
+    const initialCode = ref(''); // Store initial value
 
-// Submission State
-const submissionMessage = ref('');
-const isSubmitting = ref(false);
-const isError = ref(false);
+    // Submission State
+    const submissionMessage = ref('');
+    const isSubmitting = ref(false);
+    const isError = ref(false);
 
-const board = ref([
-    {
-        id: 1,
-        image: '/images/mountasser-hachem1.webp',
-        name: 'Mountasser Hachem',
-        role: 'Chairman',
-        linkedin: '#',
-        description:'Mr. Hachem is a seasoned entrepreneur with over 25 years of experience, whose visionary leadership has been crucial in shaping the success of Monty Group, a global company with subsidiaries across telecom, fintech, hospitality, and aviation. Known for his strategic foresight and risk-taking, he has driven the company’s growth by seizing opportunities in emerging industries and adapting to market shifts. Under his leadership, Monty Group has rapidly expanded its international presence and established a reputation for excellence, creating a lasting legacy of success. With a diverse portfolio that includes Monty Mobile, Monty eSIM, Monty Finance, MyMonty Europe, Monty Capital, and others, Mr. Hachem has solidified Monty Group’s position as a dynamic, multi-industry enterprise at the forefront of innovation and global business.',
-    },
-    {
-        id: 2,
-        image: '/images/george-kanaan.webp',
-        name: 'George Kanaan',
-        role: 'Board Member',
-        linkedin: '#',
-        description: 'George is an independent non-executive Board Member at Monty Finance since February 2024. He is also the Honorary Chairman of the Arab Bankers Association in London, where he also served as CEO from 2009 to 2024. A banking and finance expert, George boasts a distinguished career with extensive leadership experience in major financial institutions, including Citibank in London, Greece and Saudi Arabia, and First National Bank of Chicago in London. George headed Saudi American Bank\'s (a Citibank subsidiary) London branch, which he created in 1987. He also started Samba Capital Management International (SCMI), a portfolio management operation, and led its business development. Under his leadership, SCMI grew to manage nearly $3 billion in assets. George has also served as CEO of Makshaff Services Limited, a family office which he created, managing over $3 billion in global assets with offices in Riyadh, Geneva, and London.',
-    },
-    {
-        id: 3,
-        image: '/images/walter-siouffi.webp',
-        name: 'Walter Siouffi',
-        role: 'Board Member',
-        linkedin: '#',
-        description: 'Walter joined the Monty Finance Board in February 2024 as an independent non-executive board Member. He also serves as an independent non-executive Chairman of the Board of Bank of Africa UK Plc. Previously, he was an independent Board Member and Chairman of the Audit Committee at Attijariwafa Bank Egypt. Walter enjoys an extensive career in banking with major international banks including the Royal Bank of Canada, American Express Bank and Citibank, where he held senior positions at the head office and field level in risk management, structured finance, treasury, country management and corporate banking, in Canada, Japan and the MENA region. In 2017 he joined the Millennium Challenge Corporation for three years as Resident Country Director and Attaché based at the U.S. Embassy in Rabat, overseeing the implementation of a $450 million grant to the Moroccan Government, aimed at unblocking constraints to economic growth.',
-    },
-    {
-        id: 4,
-        image: '/images/gaby-andari1.webp',
-        name: 'Gaby Andari',
-        role: 'Board Member',
-        linkedin: '#',
-        description: 'Gaby joined the Monty Finance Board in February 2024 as an independent non-executive Board Member. He is a transformative information technology expert with more than 25 years of experience in digital transformation and strategic IT leadership in the high-tech and financial services industries. In his previous role as Chief Information Officer at Bank of Beirut, he has spearheaded global IT and business digital transformation initiatives, overseeing a team of IT professionals across multiple regions including Lebanon, Australia, Oman, the UK, and Cyprus. Before this, he worked in IT leadership roles at fortune 500 and high-growth companies in the USA and Canada. Notably, he served as Vice President, Information Technology and Chief Information Officer at the Canadian Scholarship Trust Plan, and held key strategic roles at Boston Acoustics, Perseptive Biosystems, and Millipore.',
-    },
-]);
+    const board = ref([
+        {
+            id: 1,
+            image: '/images/mountasser-hachem1.webp',
+            name: 'Mountasser Hachem',
+            role: 'Chairman',
+            linkedin: '#',
+            description:'Mr. Hachem is a seasoned entrepreneur with over 25 years of experience, whose visionary leadership has been crucial in shaping the success of Monty Group, a global company with subsidiaries across telecom, fintech, hospitality, and aviation. Known for his strategic foresight and risk-taking, he has driven the company’s growth by seizing opportunities in emerging industries and adapting to market shifts. Under his leadership, Monty Group has rapidly expanded its international presence and established a reputation for excellence, creating a lasting legacy of success. With a diverse portfolio that includes Monty Mobile, Monty eSIM, Monty Finance, MyMonty Europe, Monty Capital, and others, Mr. Hachem has solidified Monty Group’s position as a dynamic, multi-industry enterprise at the forefront of innovation and global business.',
+        },
+        {
+            id: 2,
+            image: '/images/george-kanaan.webp',
+            name: 'George Kanaan',
+            role: 'Board Member',
+            linkedin: '#',
+            description: 'George is an independent non-executive Board Member at Monty Finance since February 2024. He is also the Honorary Chairman of the Arab Bankers Association in London, where he also served as CEO from 2009 to 2024. A banking and finance expert, George boasts a distinguished career with extensive leadership experience in major financial institutions, including Citibank in London, Greece and Saudi Arabia, and First National Bank of Chicago in London. George headed Saudi American Bank\'s (a Citibank subsidiary) London branch, which he created in 1987. He also started Samba Capital Management International (SCMI), a portfolio management operation, and led its business development. Under his leadership, SCMI grew to manage nearly $3 billion in assets. George has also served as CEO of Makshaff Services Limited, a family office which he created, managing over $3 billion in global assets with offices in Riyadh, Geneva, and London.',
+        },
+        {
+            id: 3,
+            image: '/images/walter-siouffi.webp',
+            name: 'Walter Siouffi',
+            role: 'Board Member',
+            linkedin: '#',
+            description: 'Walter joined the Monty Finance Board in February 2024 as an independent non-executive board Member. He also serves as an independent non-executive Chairman of the Board of Bank of Africa UK Plc. Previously, he was an independent Board Member and Chairman of the Audit Committee at Attijariwafa Bank Egypt. Walter enjoys an extensive career in banking with major international banks including the Royal Bank of Canada, American Express Bank and Citibank, where he held senior positions at the head office and field level in risk management, structured finance, treasury, country management and corporate banking, in Canada, Japan and the MENA region. In 2017 he joined the Millennium Challenge Corporation for three years as Resident Country Director and Attaché based at the U.S. Embassy in Rabat, overseeing the implementation of a $450 million grant to the Moroccan Government, aimed at unblocking constraints to economic growth.',
+        },
+        {
+            id: 4,
+            image: '/images/gaby-andari1.webp',
+            name: 'Gaby Andari',
+            role: 'Board Member',
+            linkedin: '#',
+            description: 'Gaby joined the Monty Finance Board in February 2024 as an independent non-executive Board Member. He is a transformative information technology expert with more than 25 years of experience in digital transformation and strategic IT leadership in the high-tech and financial services industries. In his previous role as Chief Information Officer at Bank of Beirut, he has spearheaded global IT and business digital transformation initiatives, overseeing a team of IT professionals across multiple regions including Lebanon, Australia, Oman, the UK, and Cyprus. Before this, he worked in IT leadership roles at fortune 500 and high-growth companies in the USA and Canada. Notably, he served as Vice President, Information Technology and Chief Information Officer at the Canadian Scholarship Trust Plan, and held key strategic roles at Boston Acoustics, Perseptive Biosystems, and Millipore.',
+        },
+    ]);
 
-onMounted(async () => {
-    // Load initial countries in the country code dropdown
-    loadInitialCountries();
+    onMounted(async () => {
+        // Load initial countries in the country code dropdown
+        loadInitialCountries();
 
-    // Detect country immediately on component mount and assign it to form.value.code
-    detectCountry().then(() => {
-        initialCode.value = selectedCountry.value.code
-        form.value.code = selectedCountry.value.code;
+        // Detect country immediately on component mount and assign it to form.value.code
+        detectCountry().then(() => {
+            initialCode.value = selectedCountry.value.code
+            form.value.code = selectedCountry.value.code;
+        });
     });
-});
 
-const form = ref({
-    full_name: '',
-    email: '',
-    company_name: '',
-    position: '',
-    code: '',
-    mobile: '',
-    subject: '',
-    message: '',
-});
-
-const errors = ref({
-    full_name: '',
-    email: '',
-    company_name: '',
-    position: '',
-    code: '',
-    mobile: '',
-    subject: '',
-    message: '',
-});
-
-const validationRules = {
-    full_name: {
-        required: 'Please enter your full name',
-        safe: 'Your input has invalid value'
-    },
-    email: {
-        required: 'Please enter your email address',
-        email: 'Please enter a valid email address',
-        safe: 'Your input has invalid value'
-    },
-    company_name: {
-        required: 'Please enter your company name',
-        safe: 'Your input has invalid value'
-    },
-    position: {
-        required: 'Please enter your position/profession',
-        safe: 'Your input has invalid value'
-    },
-    code: {
-        required: 'Please choose your country code',
-        code: 'Please enter a valid country code',
-        safe: 'Your input has invalid value'
-    },
-    mobile: {
-        required: 'Please enter your mobile number',
-        numeric: 'Please enter a valid numeric phone number',
-        length: 'Please enter a valid phone number',
-        safe: 'Your input has invalid value'
-    },
-    subject: {
-        required: 'Please enter your subject',
-          safe: 'Your input has invalid value'
-    },
-    message: {
-        required: 'Please enter your message',
-        safe: 'Your input has invalid value'
-    },
-};
-
-// Submitting the form
-const handleSubmit = async () => {
-    // Disable the submit button
-    isSubmitting.value = true;
-
-    // Validate form fields
-    const isFormValid = validateForm(form, errors, validationRules);
-
-    // If either form or file validation fails, stop submission
-    if (!isFormValid) {
-        // console.log('Validation failed:', errors.value);
-        isSubmitting.value = false; // Re-enable the button
-        submissionMessage.value = 'Please ensure all required fields are correctly filled and try submitting again.'; // Re-enable the butto
-        isError.value = true;
-        return; // Stop submission if form or file validation fails
-    }
-
-    try {
-        const API_ENDPOINT = 'https://backend.montyfinance.com/wp-json/contact-form-7/v1/contact-forms/13/feedback';
-        const formData = new FormData();
-
-        // Append top-level fields
-
-        Object.keys(form.value).forEach((key) => {
-            formData.append(key, form.value[key]);
-        });
-        formData.append('_wpcf7_unit_tag', 'rte');
-
-        const response = await fetch(API_ENDPOINT, {
-            method: 'POST',
-            body: formData,
-            headers: {
-                'Accept': 'application/json',
-                // 'Content-Type': 'multipart/form-data' // No need to set this header for FormData
-            },
-        });
-
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        
-        const data = await response.json();
-        // console.log("Form submitted successfully:", data);
-
-        if(data.status == 'validation_failed'){
-            submissionMessage.value = "Error in submitting your message. Please try again later";
-            isError.value = true;
-
-            // Clear error message after 2 seconds
-            setTimeout(() => {
-                submissionMessage.value = '';
-            }, 2000);
-            throw new Error('Validation Error');
-        }
-
-        submissionMessage.value = "Thank you for your message."
-        isError.value = false;
-        // Clear success message after 2 seconds
-        setTimeout(() => {
-            submissionMessage.value = '';
-        }, 2000);
-
-        resetForm();
-        //Handle success response, such as notifying the user or redirecting
-    } catch (error) {
-        // console.error("Form submission error:", error);
-        // Set error message
-        submissionMessage.value = "Error in submitting your message. Please try again later";
-        isError.value = true;
-
-        // Clear error message after 2 seconds
-        setTimeout(() => {
-            submissionMessage.value = '';
-        }, 2000);
-    } finally {
-        // Re-enable the submit button
-        isSubmitting.value = false;
-    }
-};
-
-// Resetting the form
-const resetForm = () => {
-    form.value = {
-        email: '',
-        company_name: '',
-        position: '',
-code: selectedCountry.value ? selectedCountry.value.code : initialCode.value,
-        code: '',
-        mobile: '',
-        subject: '',
-        message: '',
-    };
-    errors.value = {
+    const form = ref({
         full_name: '',
         email: '',
         company_name: '',
@@ -497,78 +344,230 @@ code: selectedCountry.value ? selectedCountry.value.code : initialCode.value,
         mobile: '',
         subject: '',
         message: '',
+    });
+
+    const errors = ref({
+        full_name: '',
+        email: '',
+        company_name: '',
+        position: '',
+        code: '',
+        mobile: '',
+        subject: '',
+        message: '',
+    });
+
+    const validationRules = {
+        full_name: {
+            required: 'Please enter your full name',
+            safe: 'Your input has invalid value'
+        },
+        email: {
+            required: 'Please enter your email address',
+            email: 'Please enter a valid email address',
+            safe: 'Your input has invalid value'
+        },
+        company_name: {
+            required: 'Please enter your company name',
+            safe: 'Your input has invalid value'
+        },
+        position: {
+            required: 'Please enter your position/profession',
+            safe: 'Your input has invalid value'
+        },
+        code: {
+            required: 'Please choose your country code',
+            code: 'Please enter a valid country code',
+            safe: 'Your input has invalid value'
+        },
+        mobile: {
+            required: 'Please enter your mobile number',
+            numeric: 'Please enter a valid numeric phone number',
+            length: 'Please enter a valid phone number',
+            safe: 'Your input has invalid value'
+        },
+        subject: {
+            required: 'Please enter your subject',
+            safe: 'Your input has invalid value'
+        },
+        message: {
+            required: 'Please enter your message',
+            safe: 'Your input has invalid value'
+        },
     };
-};
 
-// Choosing Country
-const toggleDropdown = () => {
-    showDropdown.value = !showDropdown.value;
+    // Submitting the form
+    const handleSubmit = async () => {
+        // Disable the submit button
+        isSubmitting.value = true;
 
-    // Reset country list and lastLoadedIndex when closing the dropdown
-    if (!showDropdown.value) {
-        resetDropdown();
-    }
-};
+        // Validate form fields
+        const isFormValid = validateForm(form, errors, validationRules);
 
-const resetDropdown = () => {
-    countries.value = [];
-    lastLoadedIndex.value = 0;
-    filteredCountries.value = [];
-    searchFlag.value = false
-    searchQuery.value = ''
-    loadInitialCountries();
-};
-
-const closeDropdown = () => {
-    loadInitialCountries();
-};
-
-const selectCountry = (country) => {
-    selectedCountry.value = country;
-    form.value.code = country.code;
-    emit('select', country);
-    showDropdown.value = false;
-    resetDropdown()
-};
-
-const loadInitialCountries = () => {
-    loadNextCountries();
-};
-
-const loadNextCountries = () => {
-    const batchSize = 10;
-    const startIndex = lastLoadedIndex.value;
-    const endIndex = startIndex + batchSize;
-    const nextBatch = countriesData.slice(startIndex, endIndex);
-
-    countries.value = [...countries.value, ...nextBatch];
-    lastLoadedIndex.value = endIndex;
-    filteredCountries.value = countries.value;
-};
-
-const handleScroll = () => {
-    const container = dropdownContainer.value;
-    if (searchQuery.value === '' && container.scrollTop + container.clientHeight >= container.scrollHeight - 20) {
-        if (!searchFlag.value) {
-            loadNextCountries();
+        // If either form or file validation fails, stop submission
+        if (!isFormValid) {
+            // console.log('Validation failed:', errors.value);
+            isSubmitting.value = false; // Re-enable the button
+            submissionMessage.value = 'Please ensure all required fields are correctly filled and try submitting again.'; // Re-enable the butto
+            isError.value = true;
+            return; // Stop submission if form or file validation fails
         }
-    }
-};
 
-const searchCountries = () => {
-    const searchResults = countriesData.filter((country) =>
-        country.name.toLowerCase().includes(searchQuery.value.toLowerCase())
-    );
-    if (searchQuery.value != '') {
-        filteredCountries.value = searchResults;
-        searchFlag.value = true
-    }
-    else {
-        resetDropdown();
-    }
-};
+        try {
+            const API_ENDPOINT = 'https://backend.montyfinance.com/wp-json/contact-form-7/v1/contact-forms/13/feedback';
+            const formData = new FormData();
 
-watch(searchQuery, searchCountries);
+            // Append top-level fields
+
+            Object.keys(form.value).forEach((key) => {
+                formData.append(key, form.value[key]);
+            });
+            formData.append('_wpcf7_unit_tag', 'rte');
+
+            const response = await fetch(API_ENDPOINT, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json',
+                    // 'Content-Type': 'multipart/form-data' // No need to set this header for FormData
+                },
+            });
+
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            
+            const data = await response.json();
+            // console.log("Form submitted successfully:", data);
+
+            if(data.status == 'validation_failed'){
+                submissionMessage.value = "Error in submitting your message. Please try again later";
+                isError.value = true;
+
+                // Clear error message after 2 seconds
+                setTimeout(() => {
+                    submissionMessage.value = '';
+                }, 2000);
+                throw new Error('Validation Error');
+            }
+
+            submissionMessage.value = "Thank you for your message."
+            isError.value = false;
+            // Clear success message after 2 seconds
+            setTimeout(() => {
+                submissionMessage.value = '';
+            }, 2000);
+
+            resetForm();
+            //Handle success response, such as notifying the user or redirecting
+        } catch (error) {
+            // console.error("Form submission error:", error);
+            // Set error message
+            submissionMessage.value = "Error in submitting your message. Please try again later";
+            isError.value = true;
+
+            // Clear error message after 2 seconds
+            setTimeout(() => {
+                submissionMessage.value = '';
+            }, 2000);
+        } finally {
+            // Re-enable the submit button
+            isSubmitting.value = false;
+        }
+    };
+
+    // Resetting the form
+    const resetForm = () => {
+        form.value = {
+            email: '',
+            company_name: '',
+            position: '',
+            code: selectedCountry.value ? selectedCountry.value.code : initialCode.value,
+            mobile: '',
+            subject: '',
+            message: '',
+        };
+        errors.value = {
+            full_name: '',
+            email: '',
+            company_name: '',
+            position: '',
+            code: '',
+            mobile: '',
+            subject: '',
+            message: '',
+        };
+    };
+
+    // Choosing Country
+    const toggleDropdown = () => {
+        showDropdown.value = !showDropdown.value;
+
+        // Reset country list and lastLoadedIndex when closing the dropdown
+        if (!showDropdown.value) {
+            resetDropdown();
+        }
+    };
+
+    const resetDropdown = () => {
+        countries.value = [];
+        lastLoadedIndex.value = 0;
+        filteredCountries.value = [];
+        searchFlag.value = false
+        searchQuery.value = ''
+        loadInitialCountries();
+    };
+
+    const closeDropdown = () => {
+        loadInitialCountries();
+    };
+
+    const selectCountry = (country) => {
+        selectedCountry.value = country;
+        form.value.code = country.code;
+        emit('select', country);
+        showDropdown.value = false;
+        resetDropdown()
+    };
+
+    const loadInitialCountries = () => {
+        loadNextCountries();
+    };
+
+    const loadNextCountries = () => {
+        const batchSize = 10;
+        const startIndex = lastLoadedIndex.value;
+        const endIndex = startIndex + batchSize;
+        const nextBatch = countriesData.slice(startIndex, endIndex);
+
+        countries.value = [...countries.value, ...nextBatch];
+        lastLoadedIndex.value = endIndex;
+        filteredCountries.value = countries.value;
+    };
+
+    const handleScroll = () => {
+        const container = dropdownContainer.value;
+        if (searchQuery.value === '' && container.scrollTop + container.clientHeight >= container.scrollHeight - 20) {
+            if (!searchFlag.value) {
+                loadNextCountries();
+            }
+        }
+    };
+
+    const searchCountries = () => {
+        const searchResults = countriesData.filter((country) =>
+            country.name.toLowerCase().includes(searchQuery.value.toLowerCase())
+        );
+        if (searchQuery.value != '') {
+            filteredCountries.value = searchResults;
+            searchFlag.value = true
+        }
+        else {
+            resetDropdown();
+        }
+    };
+
+    watch(searchQuery, searchCountries);
 </script>
 
 <style lang="sass" scoped>
