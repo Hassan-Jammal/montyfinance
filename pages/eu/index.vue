@@ -17,9 +17,9 @@
 		
 		<section id="section-2" class="pt-28 pb-28 md:pt-32 bg-[#EEF3F5]">
 			<div class="container">
-				<div class="flex items-center gap-1 text-sm text-[#C7D165] font-libre font-bold uppercase" data-aos="fade-up">
+				<div class="flex items-center gap-1 text-sm text-[#D4A23C] font-libre font-bold uppercase" data-aos="fade-up">
 					<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#C7D165"/>
+						<path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#D4A23C"/>
 					</svg>
 					<h2>Affiliated With</h2>
 				</div>
@@ -49,9 +49,9 @@
 				<!-- lg:pl-16 -->
 				<div class="w-full lg:w-3/7 my-16 lg:my-32 lg:pl-16 order-0 lg:order-1">
 					<div :style="{ marginLeft: `-${marginLeft}px`, width: `calc(100% + ${marginLeft}px` }">
-						<div class="flex items-center gap-1 text-sm text-[#C7D165] font-libre font-bold uppercase" data-aos="fade-up">
+						<div class="flex items-center gap-1 text-sm text-[#D4A23C] font-libre font-bold uppercase" data-aos="fade-up">
 							<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#C7D165"/>
+								<path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#D4A23C"/>
 							</svg>
 							<h2>What We Do</h2>
 						</div>
@@ -88,9 +88,9 @@
 		<section id="section-4" class="about-us py-16 md:py-32 text-center mx-auto">
 			<div class="container">
 				<div class="w-full md:w-3/5 mx-auto">
-					<div class="flex justify-center items-center gap-1 text-sm text-[#C7D165] font-libre font-bold uppercase" data-aos="fade-up">
+					<div class="flex justify-center items-center gap-1 text-sm text-[#D4A23C] font-libre font-bold uppercase" data-aos="fade-up">
 						<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#C7D165"/>
+							<path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#D4A23C"/>
 						</svg>
 						<h2>About Monty Finance</h2>
 					</div>
@@ -139,9 +139,9 @@
 			<div class="container">
 				<div class="flex max-md:flex-col items-center gap-8">
 					<div class="flex-1 w-full">
-						<div class="flex items-center gap-1 text-sm text-[#C7D165] font-libre font-bold uppercase" data-aos="fade-up">
+						<div class="flex items-center gap-1 text-sm text-[#D4A23C] font-libre font-bold uppercase" data-aos="fade-up">
 							<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#C7D165"/>
+								<path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#D4A23C"/>
 							</svg>
 							<h2>Contact Us</h2>
 						</div>
@@ -257,9 +257,9 @@
 
 		<section id="section-7" class="board py-16 pb-32">
 			<div class="container">
-				<div class="flex items-center gap-1 text-sm text-[#C7D165] font-libre font-bold uppercase" data-aos="fade-up">
+				<div class="flex items-center gap-1 text-sm text-[#D4A23C] font-libre font-bold uppercase" data-aos="fade-up">
 					<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#C7D165"/>
+						<path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#D4A23C"/>
 					</svg>
 					<h2>Board Members</h2>
 				</div>
@@ -308,9 +308,9 @@
 				
 				<div class="w-full lg:w-3/7 py-16 md:py-32 lg:pl-16 order-0 lg:order-1">
 					<div :style="{ marginLeft: `-${marginLeft}px`, width: `calc(100% + ${marginLeft}px` }">
-						<div class="flex items-center gap-1 text-sm text-[#C7D165] font-libre font-bold uppercase" data-aos="fade-up">
+						<div class="flex items-center gap-1 text-sm text-[#D4A23C] font-libre font-bold uppercase" data-aos="fade-up">
 							<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#C7D165"/>
+								<path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#D4A23C"/>
 							</svg>
 							<h2>Our Offices</h2>
 						</div>
@@ -347,9 +347,9 @@
 			<div class="container">
 				<div class="flex max-lg:flex-col items-start gap-8">
 					<div class="flex-1 w-full md:sticky md:top-[88px]">
-						<div class="flex items-center gap-1 text-sm text-[#C7D165] font-libre font-bold uppercase" data-aos="fade-up">
+						<div class="flex items-center gap-1 text-sm text-[#D4A23C] font-libre font-bold uppercase" data-aos="fade-up">
 							<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#C7D165"/>
+								<path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#D4A23C"/>
 							</svg>
 							<h2>Our Coverage</h2>
 						</div>
@@ -371,9 +371,9 @@
 
 		<section id="section-10" class="portfolio py-16 md:py-32">
 			<div class="container">
-				<div class="flex items-center gap-1 text-sm text-[#C7D165] font-libre font-bold uppercase" data-aos="fade-up">
+				<div class="flex items-center gap-1 text-sm text-[#D4A23C] font-libre font-bold uppercase" data-aos="fade-up">
 					<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#C7D165"/>
+						<path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#D4A23C"/>
 					</svg>
 					<h2>Profile</h2>
 				</div>

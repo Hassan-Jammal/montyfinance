@@ -4,7 +4,7 @@
             <div class="flex flex-col justify-center gap-4 w-full md:w-1/2 xl:w-2/5 2xl:w-1/3 h-full">
                 <h1 class="text-white text-2xl lg:text-[3rem] font-lora !leading-[1.3]" data-aos="fade-up" data-aos-delay="100"><span class="font-medium">Empowering Every Lebanese</span> with Inclusive Access to Essential Financial Services</h1>
                 <div data-aos="fade-up" data-aos-delay="200">
-                    <ScrollButton target="contact-us" class="mt-3 md:mt-6 py-2 px-8 text-sm font-medium text-black bg-[#C7D165] hover:bg-white rounded-full transition-[background] duration-300 ease-in-out" >Contact us</ScrollButton>
+                    <ScrollButton target="contact-us" class="mt-3 md:mt-6 py-2 px-8 text-sm font-medium text-black bg-[#D4A23C] hover:bg-white rounded-full transition-[background] duration-300 ease-in-out" >Contact us</ScrollButton>
                 </div>
             </div>
         </div>
@@ -12,9 +12,9 @@
 
     <section id="section-2" class="about-us py-16 md:py-32 mx-auto">
         <div class="container">
-            <div class="flex gap-1 text-sm text-[#C7D165] font-libre font-bold uppercase" data-aos="fade-up">
+            <div class="flex gap-1 text-sm text-[#D4A23C] font-libre font-bold uppercase" data-aos="fade-up">
                 <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#C7D165"/>
+                    <path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#D4A23C"/>
                 </svg>
                 <h2>About Monty Finance</h2>
             </div>
@@ -86,9 +86,9 @@
     <section id="section-5" class="our-app py-16 md:py-32 text-center mx-auto">
         <div class="container">
             <div class="w-full md:w-3/5 mx-auto">
-                <div class="flex justify-center items-center gap-1 text-sm text-[#C7D165] font-libre font-bold uppercase" data-aos="fade-up">
+                <div class="flex justify-center items-center gap-1 text-sm text-[#D4A23C] font-libre font-bold uppercase" data-aos="fade-up">
                     <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#C7D165"/>
+                        <path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#D4A23C"/>
                     </svg>
                     <h2>Our App</h2>
                 </div>
@@ -101,9 +101,9 @@
 
     <section id="section-6" class="board py-16 pb-32 bg-gradient-to-r from-[#09052B] to-[#585E8D]">
         <div class="container">
-            <div class="flex items-center gap-1 text-sm text-[#C7D165] font-libre font-bold uppercase" data-aos="fade-up">
+            <div class="flex items-center gap-1 text-sm text-[#D4A23C] font-libre font-bold uppercase" data-aos="fade-up">
                 <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#C7D165"/>
+                    <path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#D4A23C"/>
                 </svg>
                 <h2>Board Members</h2>
             </div>
@@ -132,9 +132,9 @@
         <div class="container">
             <div class="flex max-md:flex-col items-center gap-24">
                 <div class="w-full lg:w-3/5">
-                    <div class="flex items-center gap-1 text-sm text-[#C7D165] font-libre font-bold uppercase">
+                    <div class="flex items-center gap-1 text-sm text-[#D4A23C] font-libre font-bold uppercase">
                         <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#C7D165"/>
+                            <path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#D4A23C"/>
                         </svg>
                         <h2>Contact Us</h2>
                     </div>

@@ -3,9 +3,9 @@
         <div class="container">
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-12 items-center">
                 <div class="flex flex-col justify-center">
-                    <div class="flex gap-1 text-sm text-[#C7D165] font-libre font-bold uppercase">
+                    <div class="flex gap-1 text-sm text-[#D4A23C] font-libre font-bold uppercase">
                         <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#C7D165"/>
+                            <path d="M12 0.5H4.89919H0V5.41129V12.5" fill="#D4A23C"/>
                         </svg>
                         <h2>Code of Conduct</h2>
                     </div>
